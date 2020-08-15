@@ -7,7 +7,7 @@ A Reasonable Website is a template that *anyone can use* to make an accessible, 
 * [Reasonable?](#reasonable)
 * [How might I use this?](#how-might-i-use-this)
 * [Who made this?](#who-made-this)
-* [Acknowledgements, Credits, and Thanks?](#acknowledgements-credits-and-thanks)
+* [Acknowledgements, Credits, and Thanks](#acknowledgements-credits-and-thanks)
 
 ## Why does this exist?
 A Reasonable Website (<abbr title="A Reasonable Website">ARW</abbr>) exists to help people make nice websites. It exists to become a simple, free, and universal vehicle for pushing hypertext out into the world.
