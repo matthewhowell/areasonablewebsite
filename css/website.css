@@ -1,0 +1,343 @@
+:root {
+	
+	--color-blue-lighter: #F6F8FE;
+	--color-blue-light: #C2D3F5;
+	--color-blue-medium: #5D88EF;
+	--color-blue-dark: #0D52F2;
+	--color-blue-darker: #0F3A8A;
+	/* https://webaim.org/resources/contrastchecker/?fcolor=C2D3F5&bcolor=0B48D5 */
+
+	--color-gray-lighter: #F4F4F6;
+	--color-gray-light: #D1D3DB;
+	--color-gray-medium: #898C9F;
+	--color-gray-dark: #65687B;
+	--color-gray-darker: #434551;
+	/* https://webaim.org/resources/contrastchecker/?fcolor=BABDC9&bcolor=4E505F */
+
+	--color-green-lighter: #F5FEFB;
+	--color-green-light: #74DCB6;
+	--color-green-medium: #16A26E;
+	--color-green-dark: #15845B;
+	--color-green-darker: #124934;
+	/* https://webaim.org/resources/contrastchecker/?fcolor=74DCB6&bcolor=10563C */
+
+	--color-orange-lighter: #FEF0EC;
+	--color-orange-light: #F6B197;
+	--color-orange-medium: #EE6D3A;
+	--color-orange-dark: #B24310;
+	--color-orange-darker: #7A300B;
+	/* https://webaim.org/resources/contrastchecker/?fcolor=74DCB6&bcolor=10563C */
+
+	--color-pink-lighter: #FCEEFA;
+	--color-pink-light: #EDB6E3;
+	--color-pink-medium: #E147C7;
+	--color-pink-dark: #B42297;
+	--color-pink-darker: #6A1B5B;
+	/* https://webaim.org/resources/contrastchecker/?fcolor=EDB6E3&bcolor=7F246D */
+
+	--color-purple-lighter: #EAE5FA;
+	--color-purple-light: #CBBEEF;
+	--color-purple-medium: #8A68E8;
+	--color-purple-dark: #471EC3;
+	--color-purple-darker: #32178C;
+	/* https://webaim.org/resources/contrastchecker/?fcolor=CBBEEF&bcolor=5434B7 */
+	
+	--color-red-lighter: #FEEBEE;
+	--color-red-light: #FDB4BF;
+	--color-red-medium: #F5475E;
+	--color-red-dark: #C11F35;
+	--color-red-darker: #791521;
+	/* https://webaim.org/resources/contrastchecker/?fcolor=FDB4BF&bcolor=A21626 */
+
+	--color-yellow-lighter: #FFFCCC;
+	--color-yellow-light: #FFF88F;
+	--color-yellow-medium: #FFF352;
+	--color-yellow-dark: #FFF129;
+	--color-yellow-darker: #FFEE00;
+
+	/* --color-teal-lighter: #F5FEFD;
+	--color-teal-light: #8AE5D9;
+	--color-teal-medium: #199E8A;
+	--color-teal-dark: #107F72;
+	--color-teal-darker: #084A40;
+	 */
+	/* neutrals */
+	--color-neutral-red: #F5E4E0;
+	--color-neutral-yellow: #FAF7F0;
+	--color-neutral-green: #EBF5E0;
+	--color-neutral-teal: #E0F5E7;
+	--color-neutral-blue: #E0EDF5;
+	--color-neutral-purple: #E9E8F7;
+	--color-neutral-pink: #F7E8F5;
+	
+	/* neutrals */
+	--color-neutral-red: #F5E4E0;
+	--color-neutral-yellow: #F5EFE0;
+	--color-neutral-green: #E8F8F1;
+	--color-neutral-blue: #E0EDF5;
+	--color-neutral-purple: #F7F5FF;
+	--color-neutral-pink: #F7E8F5;
+	--color-neutral-yellow: #FFFEEB;
+
+	/* --color-link:
+	--color-link-visited:
+	--color-link-active:
+	--color-link-hover: */
+	
+	/* reasonable gradients */
+
+	/* red pink purple */
+	--gradient-rpp: linear-gradient(90deg, rgba(245,71,94,.5) 0%, rgba(225,71,199,.5) 50%, rgba(138,104,232,.5) 100%);
+
+	/* pink purple blue */
+	--gradient-ppb: linear-gradient(90deg, rgba(245,71,94,.5) 0%, rgba(225,71,199,.5) 50%, rgba(93,136,239,.5) 100%);
+
+	/* purple blue green */
+	--gradient-pbg: linear-gradient(90deg, rgba(138,104,232,.5) 0%, rgba(93,136,239,.5) 50%, rgba(22,162,110,.5) 100%);
+
+	/* blue green yellow */
+	--gradient-bgy: linear-gradient(90deg, rgba(93,136,239,.5) 0%, rgba(22,162,110,.5) 50%, rgba(255,243,82,.5) 100%);
+
+	/* green yellow orange */
+	--gradient-gyo: linear-gradient(90deg, rgba(22,162,110,.5) 0%, rgba(255,243,82,.5) 50%, rgba(238,109,58,.5) 100%);
+	
+	/* yellow orange red */
+	--gradient-yor: linear-gradient(90deg, rgba(255,243,82,.5) 0%, rgba(238,109,58,.5) 50%, rgba(245,71,94,.5) 100%);
+
+	/* orange red pink */
+	--gradient-yor: linear-gradient(90deg, rgba(255,243,82,.5) 0%, rgba(238,109,58,.5) 50%, rgba(245,71,94,.5) 100%);
+
+
+	--gradient-reasonable: linear-gradient(90deg, rgba(245,71,94,.5) 0%, rgba(238,109,58,.5) 16%, rgba(255,243,82,.5) 32%, rgba(22,162,110,.5) 48%, rgba(93,136,239,.5) 64%, rgba(138,104,232,.5) 80%, rgba(225,71,199,.5) 100%);
+
+	/* system font sans serif stack */
+	--font-stack-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+	/* system font serif stack */
+	--font-stack-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+
+	/* system font monospace stack */
+	--font-stack-mono: SFMono-Regular, Menlo, Consolas, "Liberation Mono", "Courier New", monospace;
+
+	/* --color-neutral: #E0EDF5; */
+	/* --color-neutral: #211C36; */
+	--color-white: #ffffff;
+	
+	/* dark mode background color, neutral, and text color */
+	--color-background-dark: #232226;
+	--color-neutral-dark: #3B3A41;
+	--color-selection-dark: #3B3A41;
+	--color-text-dark: #EFEFF0;
+	/* FEFFFF */
+	/* light mode background color, neutral, and text color */
+	--color-backround-light: #FFFFFF;
+	--color-neutral-light: #F4F4F6;
+	--color-selection-light: #F4F4F6;
+	--color-text-light: #232226;
+
+	/* inital page load begins in light mode */
+	--color-background: var(--color-background-light);
+	--color-neutral: var(--color-neutral-light);
+	--color-selection: var(--color-selection-light);
+	--color-text: var(--color-text-light);
+
+}
+
+body {
+
+	/* body should expand to full width of window */
+	width: 100%;
+	max-width: 100%;
+
+	/* body content should be centered */
+	margin: 0 auto;
+
+	/* top padding before content begins */
+	padding: 0rem 0 0 0;
+
+	/* border-top: .5rem solid var(--color-purple-lighter); */
+	/* border-bottom: .5rem solid var(--color-purple-lighter); */
+	border-bottom: .25rem solid var(--color-lighter);
+	
+	/* top triangle border */
+	background-repeat: repeat-x;
+	background-size: 2rem;
+
+	/* light mode */
+	background-color: var(--color-background);
+	color: var(--color-text);
+/* 
+	background-image: url("./../images/stroke-hexagon.svg");
+	background-image: url("./../images/fill-hexagon.svg");
+
+	background-image: url("./../images/stroke-octogon.svg");
+	background-image: url("./../images/fill-octogon.svg");
+
+	background-image: url("./../images/stroke-diamond.svg");
+	background-image: url("./../images/fill-diamond.svg");
+
+	background-image: url("./../images/fill-circle.svg");
+	background-image: url("./../images/stroke-circle.svg"); */
+
+	/* OPTIONAL */
+	/* show only the bottom half of any background pattern */
+	/* turns a diamond into a hanging triangle, a circle into a hanging semicircle, etc */
+	/* background-position-y: -1rem; */
+
+	font-size: 1.25rem;
+
+}
+
+main > header  {
+	padding-top: 2rem;
+	margin-bottom: 4rem;
+}
+
+.sticky-header-background {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: .25rem;
+	background: transparent;
+}
+
+.bg-gradient {
+	background: var(--gradient);
+}
+
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+.mb-3 { margin-bottom: 3rem; }
+.mb-4 { margin-bottom: 4rem; }
+
+mark {
+	background-color: var(--color-lighter);
+}
+
+/* <a> */
+a, a:active {
+	/* dark purple link color */
+	color: var(--color-link);
+}
+	/* darker purple for visited links */
+	a:visited {
+		color: var(--color-link-visited);
+	}
+ 	
+	 a:hover {
+		color: var(--color-link-hover);
+	}
+ 
+a {
+	text-decoration-color: var(--color-decoration);
+}
+
+/* for direct decendents of the element */
+article,
+footer, 
+header,
+main,
+section {
+
+	/* 608px single column */
+	/* aiming to get a reasonable number (60) of characters per line */
+	max-width: 38rem;
+	
+	/* minimum width for readable text */
+	min-width: 20rem;
+	
+	/* 32px margins on top and bottom, centered horzontally */
+	margin: 0 auto 2rem auto;
+	
+	/* 16px padding on the sides */
+	padding: 0 1rem;
+
+}
+
+/* the website footer */
+body > footer {
+
+	font-size: 1rem;
+	/* allows a little breathing room at the bottom of the page scroll */
+	margin: 0 auto;
+	padding: 2rem 1rem;
+}
+
+article > footer {
+	border-left: 2px solid var(--color-neutral);
+	font-size: 1rem;
+	padding: 1rem;
+}
+
+.neutral {
+	background-color: var(--color-neutral);
+}
+
+div.full-bg {
+	width: auto;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+div.full-bg > section {
+	
+	/* 16px padding on the sides */
+	/* add padding to the top and bottom */
+	padding: 1rem;
+
+}
+
+dl dt { font-weight: normal;  }
+dl dd { margin-left: 1rem; }
+
+sup { 
+	padding: 1px 0;
+	background-color: var(--color-selection);
+}
+
+ul {
+	list-style: none;
+}
+
+li:before {
+	content: '●';
+	color: var(--color-decoration);
+	display: inline-block;
+	width: 1.25rem;
+	margin-left: -1.25rem;
+}
+
+/* li li:before { content: '○'} */
+li > ul { padding-top: 0; }
+
+
+::selection {
+	background-color: var(--color-selection); 
+}
+
+::-moz-selection { 
+	background-color: var(--color-selection); 
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-decoration: underline;
+	text-decoration-color: var(--color-decoration);
+}
+
+button, input[type=submit], input[type=button] {
+	background-color: var(--color-neutral);
+}
+
+.palette-preview {
+	display: inline-block;
+	width: 8rem;
+	border: 1px solid var(--color-gray-light);
+	border-radius: 4px;
+	border-top: none;
+}
+
+hr.gradient {
+	height: 1rem;
+	background: var(--gradient-reasonable);
+}

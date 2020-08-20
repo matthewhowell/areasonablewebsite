@@ -1,0 +1,23 @@
+:root {
+	
+	--color-lighter: #EAE5FA;
+	--color-light: #CBBEEF;
+	--color-medium: #8A68E8;
+	--color-dark: #471EC3;
+	--color-darker: #32178C;
+	
+	/* each palette includes a gradient*/
+	--gradient: linear-gradient(90deg, rgba(245,71,94,1) 0%, rgba(225,71,199,1) 50%, rgba(93,136,239,1) 100%); 
+		
+	--color-link: var(--color-medium);
+	--color-link-visited: var(--color-dark);
+	--color-link-hover: var(--color-light);
+
+	--color-decoration: var(--color-light);
+
+	--color-background: var(--color-background-dark);
+	--color-neutral: var(--color-neutral-dark);
+	--color-selection: var(--color-selection-dark);
+	--color-text: var(--color-text-dark);
+    
+}

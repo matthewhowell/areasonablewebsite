@@ -1,0 +1,25 @@
+:root {
+
+	--color-lighter: #FFFCCC;
+	--color-light: #FFF88F;
+	--color-medium: #FFF352;
+	--color-dark: #FFF129;
+	--color-darker: #FFEE00;
+
+	/* each palette includes a gradient */
+	--gradient: linear-gradient(90deg, rgba(22,162,110,.5) 0%, rgba(255,243,82,.5) 50%, rgba(238,109,58,.5) 100%);
+	
+	/* those shades also define link colors */
+	--color-link: #898C9F;
+	--color-link-visited: #65687B;
+	--color-link-hover: #D1D3DB;
+
+	/* and text decoration (mainly underlines) */
+	--color-decoration: var(--color-light);
+
+	--color-background: var(--color-background-light);
+	--color-neutral: var(--color-lighter);
+	--color-selection: var(--color-light);
+	--color-text: var(--color-text-light);
+
+}

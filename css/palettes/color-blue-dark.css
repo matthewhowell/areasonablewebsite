@@ -1,0 +1,23 @@
+:root {
+
+	--color-lighter: #F6F8FE;
+	--color-light: #C2D3F5;
+	--color-medium: #5D88EF;
+	--color-dark: #0D52F2;
+	--color-darker: #0F3A8A;
+
+	/* each palette includes a gradient*/
+	--gradient: linear-gradient(90deg, rgba(138,104,232,1) 0%, rgba(93,136,239,1) 50%, rgba(22,162,110,1) 100%);
+	
+	--color-link: var(--color-medium);
+	--color-link-visited: var(--color-dark);
+	--color-link-hover: var(--color-light);
+
+	--color-decoration: var(--color-light);
+
+	--color-background: var(--color-background-dark);
+	--color-neutral: var(--color-neutral-dark);
+	--color-selection: var(--color-selection-dark);
+	--color-text: var(--color-text-dark);
+
+}

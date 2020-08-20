@@ -1,0 +1,25 @@
+:root {
+
+	--color-lighter: #F4F4F6;
+	--color-light: #D1D3DB;
+	--color-medium: #898C9F;
+	--color-dark: #65687B;
+	--color-darker: #434551;
+	
+	/* each palette includes a gradient*/
+	/* purple blue green */
+	--gradient-purple-blue-green: linear-gradient(90deg, rgba(138,104,232,1) 0%, rgba(93,136,239,1) 50%, rgba(22,162,110,1) 100%);
+	--gradient: var(--gradient-purple-blue-green);
+	
+	--color-link: var(--color-medium);
+	--color-link-visited: var(--color-dark);
+	--color-link-hover: var(--color-light);
+
+	--color-decoration: var(--color-light);
+
+	--color-background: var(--color-background-dark);
+	--color-neutral: var(--color-neutral-dark);
+	--color-selection: var(--color-selection-dark);
+	--color-text: var(--color-text-dark);
+
+}
