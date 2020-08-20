@@ -1,0 +1,940 @@
+/*! reasonable.css v8.0.1 | MIT License | github.com/matthewhowell/reasonable.css */
+
+/* External Libraries */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ html {
+	line-height: 1.15; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /* Sections
+	 ========================================================================== */
+  
+  /**
+   * Remove the margin in all browsers.
+   */
+  
+  body {
+	margin: 0;
+  }
+  
+  /**
+   * Render the `main` element consistently in IE.
+   */
+  
+  main {
+	display: block;
+  }
+  
+  /**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+  
+  h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+  }
+  
+  /* Grouping content
+	 ========================================================================== */
+  
+  /**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+  
+  hr {
+	box-sizing: content-box; /* 1 */
+	height: 0; /* 1 */
+	overflow: visible; /* 2 */
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  pre {
+	font-family: monospace, monospace; /* 1 */
+	font-size: 1em; /* 2 */
+  }
+  
+  /* Text-level semantics
+	 ========================================================================== */
+  
+  /**
+   * Remove the gray background on active links in IE 10.
+   */
+  
+  a {
+	background-color: transparent;
+  }
+  
+  /**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+  
+  abbr[title] {
+	border-bottom: none; /* 1 */
+	text-decoration: underline; /* 2 */
+	text-decoration: underline dotted; /* 2 */
+  }
+  
+  /**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+  
+  b,
+  strong {
+	font-weight: bolder;
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  code,
+  kbd,
+  samp {
+	font-family: monospace, monospace; /* 1 */
+	font-size: 1em; /* 2 */
+  }
+  
+  /**
+   * Add the correct font size in all browsers.
+   */
+  
+  small {
+	font-size: 80%;
+  }
+  
+  /**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+  
+  sub,
+  sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+  }
+  
+  sub {
+	bottom: -0.25em;
+  }
+  
+  sup {
+	top: -0.5em;
+  }
+  
+  /* Embedded content
+	 ========================================================================== */
+  
+  /**
+   * Remove the border on images inside links in IE 10.
+   */
+  
+  img {
+	border-style: none;
+  }
+  
+  /* Forms
+	 ========================================================================== */
+  
+  /**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+	font-family: inherit; /* 1 */
+	font-size: 100%; /* 1 */
+	line-height: 1.15; /* 1 */
+	margin: 0; /* 2 */
+  }
+  
+  /**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+  
+  button,
+  input { /* 1 */
+	overflow: visible;
+  }
+  
+  /**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+  
+  button,
+  select { /* 1 */
+	text-transform: none;
+  }
+  
+  /**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+  
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+	-webkit-appearance: button;
+  }
+  
+  /**
+   * Remove the inner border and padding in Firefox.
+   */
+  
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+  }
+  
+  /**
+   * Restore the focus styles unset by the previous rule.
+   */
+  
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+  }
+  
+  /**
+   * Correct the padding in Firefox.
+   */
+  
+  fieldset {
+	padding: 0.35em 0.75em 0.625em;
+  }
+  
+  /**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+  
+  legend {
+	box-sizing: border-box; /* 1 */
+	color: inherit; /* 2 */
+	display: table; /* 1 */
+	max-width: 100%; /* 1 */
+	padding: 0; /* 3 */
+	white-space: normal; /* 1 */
+  }
+  
+  /**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+  
+  progress {
+	vertical-align: baseline;
+  }
+  
+  /**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+  
+  textarea {
+	overflow: auto;
+  }
+  
+  /**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+  
+  [type="checkbox"],
+  [type="radio"] {
+	box-sizing: border-box; /* 1 */
+	padding: 0; /* 2 */
+  }
+  
+  /**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+  
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+	height: auto;
+  }
+  
+  /**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+  
+  [type="search"] {
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
+  }
+  
+  /**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+  
+  [type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+  }
+  
+  /**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+  
+  ::-webkit-file-upload-button {
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
+  }
+  
+  /* Interactive
+	 ========================================================================== */
+  
+  /*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+  
+  details {
+	display: block;
+  }
+  
+  /*
+   * Add the correct display in all browsers.
+   */
+  
+  summary {
+	display: list-item;
+  }
+  
+  /* Misc
+	 ========================================================================== */
+  
+  /**
+   * Add the correct display in IE 10+.
+   */
+  
+  template {
+	display: none;
+  }
+  
+  /**
+   * Add the correct display in IE 10.
+   */
+  
+  [hidden] {
+	display: none;
+  }
+
+
+
+:root {
+	/* colors */
+	--color-gray: #2D2C30;
+	--color-light-gray: #888;
+	--color-lightest-gray: #CCC;
+	--color-lightest-gray: #EEE;
+	--color-white: #FFF;
+
+	--color-link: #4AA;
+	/* --color-highlight:  rgb(129, 128, 178, .25); */
+	--color-highlight:  rgb(137, 123, 175, .125);
+	--color-highlight-light:  rgba(137, 123, 175, .0625);
+	
+
+	--color-purple-lightest: rgba(129, 128, 178, .5);
+	--color-purple-light: rgb(129, 128, 178);
+	--color-purple-medium: rgb(53, 50, 118);
+	--color-purple-dark: rgb(10, 9, 59);
+
+	--color-green-light: rgb(119, 179, 149);
+	--color-green-medium: rgb(40, 119, 79);
+	--color-green-dark: rgb(0, 60, 29);
+
+	
+	/* system font sans serif stack */
+	--font-stack-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+	/* system font serif stack */
+	--font-stack-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+
+	/* system font monospace stack */
+	--font-stack-mono: SFMono-Regular, Menlo, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/*
+	only bottom margins
+	https://csswizardry.com/2012/06/single-direction-margin-declarations/
+*/
+
+/* <html> */
+html {
+	/* initial document font size of 16px */
+	/* all later rem values are based on this */
+	/* 1rem = 16px */
+    font-size: 100%;
+}
+
+/* <body> */
+body {
+	/* more line height for the text */
+    line-height: 1.5;
+
+	/* apply serif font stack to body text */
+	font-family: var(--font-stack-serif);
+	
+	/* not quite black text */
+	color: var(--color-gray);
+	
+	/* 640px single column */
+	max-width: 40rem;
+	
+	/* minimum width for readable text */
+	min-width: 20rem;
+	
+	/* 32px margins on top and bottom, centered horzontally */
+	margin: 0 auto;
+	
+	/* 16px padding on the sides */
+	padding: 1rem;
+}
+
+/* HTML elements */
+
+/* <h1>, <h2>, <h3>, <h4>, <h5>, <h6> */
+/* typography defaults for headers */
+h1, h2, h3, h4, h5, h6 {
+
+	/* apply sans font stack to headers */
+	font-family: var(--font-stack-sans);
+
+	/* tighter line height for headers */
+	line-height: 1.25;
+	
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem;}
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1.25rem; }
+
+/* hgroup */
+hgroup > h1,
+hgroup > h2,
+hgroup > h3,
+hgroup > h4,
+hgroup > h5,
+hgroup > h6 {
+	margin-bottom: 1rem;
+}
+ 
+/* <a> */
+a, a:active, a:hover {
+	/* dark purple link color */
+	color: var(--color-purple-dark);
+}
+	/* medium purple for visited links */
+	a:visited {
+		color: var(--color-purple-medium);
+	}
+
+address {
+
+}
+
+/* <nav> */
+
+/* <nav><a> */
+nav a {
+	/* add comfortable space between each nav link */
+	margin-right: 1rem;
+
+	/* prevent nav links from breaking on line endings */
+	display: inline-block;
+}
+
+	nav a:last-child {
+		/* remove extraneous margin after last nav link */
+		margin-right: 0;
+	}
+
+nav > ul {
+	list-style-type: none;
+}
+/* <p> */
+p, aside {
+	/* bottom margin for paragraphs */
+	margin: 0 0 1rem;
+}
+
+/* <hr> */
+hr {
+
+	/* remove border style */
+	border: none;
+
+	/* highlight color for horizontal rules */
+	color: var(--color-highlight);
+
+	/* highlight color for horizontal rules */
+	background-color: var(--color-highlight);
+
+	/* 2px height with a light color */
+	height: 2px;
+
+	/*  bottom margin for horizontal rules */
+	margin: 0 0 1rem 0;
+
+}
+
+/* <mark> */
+mark {
+	/* background color for marked text */
+	background-color: var(--color-highlight);
+	
+	/* additional horizontal padding to make background color more prominent */
+	padding: 0 .25rem;
+}
+
+code,
+kbd,
+pre {
+	/* monospace font stack */
+	font-family: var(--font-stack-mono);
+	
+	/* background color for code, kbd, and pre */
+	background: var(--color-highlight);
+
+	/* additional horizontal padding to make background color more prominent */
+	padding: .125rem .5rem;
+
+	border-radius: .25rem;
+}
+
+kbd {
+	border: 1px solid var(--color-purple-lightest);
+	border-width: 1px 1px 2px;
+}
+li code {
+	/* code within list items omits background color for better readability */
+	background: none;
+}
+
+/* <pre> */
+pre {
+
+	/* TODO COMMENT */
+	max-width: 100%;
+
+	/* TODO COMMENT */
+	overflow: auto;
+}
+
+audio {
+
+}
+
+blockquote {
+	/* TODO COMMENT */
+	padding: 1rem;
+
+	margin: 0 1rem 1.5rem 1rem;
+
+	/* TODO COMMENT */
+	background: var(--color-highlight-light);
+
+	/* TODO COMMENT */
+	border-left: 4px solid var(--color-highlight);
+}
+
+blockquote p:last-child {
+
+	/* TODO COMMENT */
+	padding-bottom: 0;
+
+	/* TODO COMMENT */
+	margin-bottom: 0;
+}
+
+abbr[title] {
+	/* abbreviation elements get help cursor to make them more discoverable */
+	cursor: help;
+
+	/* also include a dotted bottom border */
+	border-bottom: 1px dotted var(--color-light-gray);
+
+	text-decoration: none;
+}
+
+
+small, sub, sup {
+	/* smaller font size for small, sub, and sup */
+	font-size: .75rem;
+}
+
+figure {
+	/* standard 2rem top and bottom margin for figures */
+	margin: 0 0 1rem 0;
+
+	/* center inline children within figures */
+	text-align: center;
+}
+
+figcaption {
+	margin: 0;
+	padding: 1rem;
+
+	/* center captions within figures */
+	text-align: center;
+
+	color: var(--color-light-gray);
+}
+
+table > caption {
+	padding: .5rem .5rem;
+	color: var(--color-gray);
+	border: 1px solid var(--color-lightest-gray);
+	/* background-color: var(--color-lightest-gray); */
+	border-width: 1px 1px 0 1px;
+}
+img {
+	/* standard 2rem top and bottom margin for images */
+	margin: 0 auto 1rem auto;
+	
+	/* allow auto image height */
+	height: auto;
+	
+	/* responsive image width */
+	max-width: 100%;
+}
+
+figure img {
+	/* remove image top and bottom margin if within a figure (which has its own) */
+	margin: 0 auto;
+}
+
+figure audio {
+	/* audio elements within figures should expand to entire available width, this will allow more space for controls */
+	width: 100%;
+}
+
+figure video {
+	/* audio elements within figures should expand to entire available width, this will allow more space for controls */
+	width: 100%;
+}
+
+ul, ol {
+	margin: 0 0 1rem;
+}
+
+ol ol, ol ul, ul ul, ul ol {
+	/* no margin for nested lists */
+	margin: 0;
+}
+
+ul li, ol li {
+
+}
+
+dl {
+	display: grid;
+	grid-template-columns: max-content auto;
+}
+
+dl dt {
+	font-weight: bold;
+}
+
+dd {
+
+}
+
+details {
+	margin: 0 0 1rem 0;
+	padding: 0 0 0 1rem;
+	border-left: 1px solid var(--color-lightest-gray);
+}
+
+details > summary {
+	cursor: pointer;
+	display: inline-block;
+	border: 1px solid var(--color-lightest-gray);
+	border-radius: 4px;
+	padding: .125rem 1rem;
+	margin: 0;
+}
+
+details[open] {
+	/* when open, details will have darker left border */
+	border-color: var(--color-light-gray);
+}
+
+details[open] > summary {
+	/* when open, summary will have darker border */
+	border-color: var(--color-light-gray);
+
+	/* when open, summary will have a bottom margin */
+	margin: 0 0 1rem 0rem;
+}
+
+select {
+	display: inline-block;
+	width: auto;
+	margin: 0 .5rem 0 0;
+	font-family: var(--font-stack-sans);
+	font-size: 1rem;
+}
+
+button, input[type=submit], input[type=button] {
+	cursor: pointer;
+	display: inline-block;
+	border: 1px solid var(--color-light-gray);
+	background: none;
+	border-radius: 4px;
+	padding: .25rem 1rem;
+	margin: 0 0 0 0rem;
+	font-size: .75rem;
+	text-transform: uppercase;
+	font-weight: bold;
+
+	font-family: var(--font-stack-sans);
+}
+
+button[type=submit]::after {
+	/* content: " →"; */
+}
+
+button:hover {
+	border: 1px solid var(--color-gray);
+}
+
+button:active, input[type=submit]:active, input[type=button]:active {
+	border: 1px solid var(--color-gray);
+	color: var(--color-purple-medium);
+}
+
+em > em {
+	font-weight: bold;
+}
+meter {
+	/* -webkit-appearance: none; */
+	vertical-align: middle;
+}
+
+table {
+	border: 1px solid var(--color-lightest-gray);
+	/* border-radius: 4px; */
+	border-spacing: 0;
+	display: inline-block;
+	max-width: 100%;
+	overflow-x: auto;
+	padding: 0;
+	white-space: nowrap;
+	}
+
+table thead {
+	background-color: var(--color-highlight);
+	border-radius: 4px;
+}
+
+tbody {
+	display: table-row-group;
+	vertical-align: middle;
+	border-top-color: inherit;
+	border-right-color: inherit;
+	border-bottom-color: inherit;
+	border-left-color: inherit;
+	}
+
+table td, table th, table tr {
+	padding: 0.5rem 1rem;
+}
+
+table tr td:first-child {
+
+	}
+table td, table th, table tr {
+	padding: 0.4rem 0.8rem;
+
+	}
+
+
+summary::before {
+  }
+
+summary {
+	
+  }
+  
+summary::-webkit-details-marker {
+
+}
+
+del {
+	color: var(--color-light-gray);
+}
+
+ins {
+	text-decoration: none;
+}
+
+ins:before {
+	content: "+";
+	margin: 0 1rem 0 0;
+	color: var(--color-light-gray);
+}
+
+ins > p {
+	display: inline-block;
+}
+
+p {
+	word-wrap: break-word;
+	margin: 0 0 1rem 0;
+}
+
+/* forms */
+/* <form>, <fieldset> */
+form, fieldset {
+	/* remove border from forms and fieldsets */
+	border: none;
+	
+	/* remove margins from forms and fieldsets */
+	margin: 0;
+}
+
+
+ruby {
+	display: inline-flex;
+	flex-direction: column-reverse;
+}
+  
+rb, rt {
+	display: inline;
+	line-height: 1;
+}
+
+label, legend {
+	
+	font-family: var(--font-stack-sans);
+
+	/* TODO COMMENT */
+	font-size: .875rem;
+		
+	/* TODO COMMENT */
+	/* padding: .25rem; */
+	
+	
+	/* TODO COMMENT */
+	/* width: 100%; */
+	
+	/* TODO COMMENT */
+	
+	/* TODO COMMENT */
+	/* box-sizing: border-box; */
+	
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+legend {
+	padding: 0 0 0 .25rem;
+}
+
+label {
+	display: inline-block;
+	margin: 0 1rem 0rem 0;
+	padding: .5rem 0;
+	width: auto;
+	vertical-align: middle;
+}
+
+fieldset ol, fieldset li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+fieldset {
+	padding: 0 0 .5rem 1rem;
+	margin: 0 0 1rem 0;
+	border: 1px solid var(--color-lightest-gray);
+	border-radius: 4px;
+
+}
+
+fieldset fieldset {
+	margin: 0 1rem 1rem 0;
+}
+output {
+	/* monospace font stack */
+	font-family: var(--font-stack-mono);
+
+	/* background color for output */
+	background: var(--color-highlight);
+
+	/* additional horizontal padding to make background color more prominent */
+	padding: .125rem;
+
+	border-radius: .25rem;
+
+}
+
+input, textarea {
+	/* TODO COMMENT */
+	
+	/* TODO COMMENT */
+	display: inline-block;
+	
+	/* TODO COMMENT */
+	border: 2px solid var(--color-light-gray);
+	
+	border-radius: 4px;
+	/* TODO COMMENT */
+	background-color: var(--color-white);
+	
+	font-size: 1rem;
+	padding: .25rem .5rem;
+	margin: 0;
+}
+
+input[type=radio], input[type=checkbox] {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: .5rem;
+}
+
+iframe {
+	border: 2px solid #666;
+	margin: 0 0 1rem 0;
+	padding: 0;
+}
