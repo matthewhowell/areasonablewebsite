@@ -237,7 +237,6 @@ a {
 article,
 footer, 
 header,
-main,
 section {
 
 	/* 608px single column */
@@ -267,7 +266,7 @@ body > footer {
 article > footer {
 	border-left: 2px solid var(--color-neutral);
 	font-size: 1rem;
-	padding: 1rem;
+	padding: 0rem;
 }
 
 .neutral {
@@ -276,12 +275,13 @@ article > footer {
 
 div.full-bg {
 	width: auto;
-	max-width: 100%;
 	margin: 0 auto;
 }
 
 div.full-bg > section {
 	
+	width: auto;
+	margin: 0 auto;
 	/* 16px padding on the sides */
 	/* add padding to the top and bottom */
 	padding: 1rem;
