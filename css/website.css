@@ -235,6 +235,8 @@ a {
 
 /* for direct decendents of the element */
 article,
+footer,
+header,
 section {
 
 	/* 608px single column */
