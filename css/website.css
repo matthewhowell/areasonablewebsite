@@ -245,7 +245,7 @@ section {
 	min-width: 20rem;
 	
 	/* 32px margins on top and bottom, centered horzontally */
-	margin: 0 auto 2rem 0;
+	margin: 0 auto 2rem auto;
 	
 	/* 16px padding on the sides */
 	padding: 0 1rem;
@@ -255,9 +255,9 @@ section {
 
 header, footer {
 
-	/* 16px padding on the sides */
-	padding: 0 1rem;
-	box-sizing: border-box;
+	/* minimum width for readable text */
+	min-width: 16rem;
+
 }
 
 /* the website footer */
