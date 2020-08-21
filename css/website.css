@@ -235,23 +235,29 @@ a {
 
 /* for direct decendents of the element */
 article,
-footer, 
-header,
 section {
 
 	/* 608px single column */
 	/* aiming to get a reasonable number (60) of characters per line */
-	max-width: 38rem;
+	max-width: 40rem;
 	
 	/* minimum width for readable text */
 	min-width: 20rem;
 	
 	/* 32px margins on top and bottom, centered horzontally */
-	margin: 0 auto 2rem auto;
+	margin: 0 auto 2rem 0;
 	
 	/* 16px padding on the sides */
 	padding: 0 1rem;
 
+	box-sizing: border-box;
+}
+
+header, footer {
+
+	/* 16px padding on the sides */
+	padding: 0 1rem;
+	box-sizing: border-box;
 }
 
 /* the website footer */
@@ -260,13 +266,15 @@ body > footer {
 	font-size: 1rem;
 	/* allows a little breathing room at the bottom of the page scroll */
 	margin: 0 auto;
-	padding: 2rem 1rem;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 article > footer {
 	border-left: 2px solid var(--color-neutral);
 	font-size: 1rem;
 	padding: 0rem;
+	box-sizing: border-box;
 }
 
 .neutral {
