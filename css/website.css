@@ -373,6 +373,7 @@ hr.gradient {
 
 .icon-fill {
 	fill: var(--color-medium);
+	stroke: var(--color-medium);
 }
 
 .icon-color {
