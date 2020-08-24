@@ -423,7 +423,7 @@ body {
 	/* 16px padding on the sides */
 	padding: 1rem;
 
-	hyphens: auto;
+	/* hyphens: auto; */
 }
 
 /* HTML elements */

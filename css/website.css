@@ -190,7 +190,7 @@ body {
 
 main > header  {
 	padding-top: 2rem;
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
 }
 
 .sticky-header-background {
@@ -212,7 +212,7 @@ main > header  {
 .mb-4 { margin-bottom: 4rem; }
 
 mark {
-	background-color: var(--color-lighter);
+	background-color: var(--color-light);
 }
 
 /* <a> */
@@ -233,7 +233,6 @@ a {
 	text-decoration-color: var(--color-decoration);
 }
 
-/* for direct decendents of the element */
 article,
 footer,
 header,
@@ -255,6 +254,16 @@ section {
 	box-sizing: border-box;
 }
 
+article { padding: 0; max-width: none;}
+
+article section {
+	padding: 0 1rem;
+	margin: 0 auto 2rem auto;
+}
+
+.full-width > section {
+	margin-bottom: 0;
+}
 header, footer {
 
 	/* minimum width for readable text */
@@ -263,19 +272,20 @@ header, footer {
 }
 
 /* the website footer */
-body > footer {
+footer {
 
 	font-size: 1rem;
+	
 	/* allows a little breathing room at the bottom of the page scroll */
 	margin: 0 auto;
-	padding: 0;
+	padding: 1rem 0;
 	box-sizing: border-box;
 }
 
 article > footer {
 	border-left: 2px solid var(--color-neutral);
 	font-size: 1rem;
-	padding: 0rem;
+	padding: 1rem;
 	box-sizing: border-box;
 }
 
@@ -283,19 +293,11 @@ article > footer {
 	background-color: var(--color-neutral);
 }
 
-div.full-bg {
-	width: auto;
-	margin: 0 auto;
-}
-
-div.full-bg > section {
-	
-	width: auto;
-	margin: 0 auto;
-	/* 16px padding on the sides */
-	/* add padding to the top and bottom */
-	padding: 1rem;
-
+.full-width {
+	width: 100%;
+	max-width: none;
+	margin: 0 auto 2rem auto;
+	padding: 2rem 0rem;
 }
 
 dl dt { font-weight: normal;  }
@@ -350,4 +352,45 @@ button, input[type=submit], input[type=button] {
 hr.gradient {
 	height: 1rem;
 	background: var(--gradient-reasonable);
+}
+
+.flex-header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-bottom: 1rem;
+}
+
+.flex-header h4 {
+	margin: 0;
+	line-height: 1.5rem;
+}
+
+.icon {
+	height: 1.5rem;
+	margin-right: 1rem;
+}
+
+.icon-fill {
+	fill: var(--color-medium);
+}
+
+.icon-color {
+	color: var(--color-medium);
+}
+
+.tag {
+	border-radius: 8px;
+	padding: 2px 8px;
+	margin: 0 4px 0 0;
+	font-family: var(--font-stack-sans);
+	font-size: .875rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: var(--color-medium);
+	color:var(--color-lighter);
+}
+
+p:last-child {
+	margin-bottom: 0;
 }

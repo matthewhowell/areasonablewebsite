@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 	<head>	
 		<meta charset="utf-8">
@@ -19,55 +20,115 @@
 		<main>
 			<header>
 				<h1><a name="h1"></a>A Reasonable Website</h1>
-				<p>A Reasonable Website is a template that <em>anyone can use</em> to make an accessible, fast, and kinda nice-looking<sup><a href="#footnote-1">1</a></sup> website. That’s it!</p>
+				<p>A Reasonable Website is a template that <em>anyone can use</em> to make an accessible, fast, and kinda nice-looking<sup><a title="Footnote #1" href="#footnote-1">1</a></sup> website. That’s it!</p>
 			</header>
 
 			<article>
-				<h2>Why does this exist?</h2>
-				<p>A Reasonable Website (<abbr title="A Reasonable Website">ARW</abbr>) exists to help people make nice websites. It was built to become a simple, free, and universal vehicle for pushing hypertext out into the world.</p>
 
-				<h3>Can I use this?</h3>
-				<p><abbr title="A Reasonable Website">ARW</abbr> is free software<sup><a href="#footnote-2">2</a></sup>. The full, annotated source code is available, and it is released here under the <a href="https://choosealicense.com/licenses/mit/">MIT License</a>.</p>
-				<p>The current version (0.1) is usable, but in steady development. Check back later for a more stable release.</p>
+				<section>
+					<h2>Why does this exist?</h2>
+					<p>A Reasonable Website (<abbr title="A Reasonable Website">ARW</abbr>) exists to help humans make nice websites. It is designed to be a simple, free, and universal vehicle for pushing hypertext out into the world.</p>
+				</section>
 
-				<!-- <p>It is thoroughly documented, pretty easy to use, and ready for your next humble, tiny, little, amazing, world-changing project.</p> -->
+				<section>
+					<h3>Can I use this?</h3>
+					<p><abbr title="A Reasonable Website">ARW</abbr> is free software<sup><a title="Footnote #2" href="#footnote-2">2</a></sup>. The full, annotated source code is available, and it is released here under the <a href="https://choosealicense.com/licenses/mit/">MIT License</a>.</p>
+					<p>The current version (0.1) is usable, but in steady development. Check back later for a more stable release.</p>
+				</section>
 
-				<h3>OK, but what is <em>reasonable</em>?</h3>
-				<p>Websites can do so much (so much!), but <abbr title="A Reasonable Website">ARW</abbr> has just three goals: a reasonable website should be <em>accessible</em>, <em>performant</em>, and <em>nice-looking</em>.</p>
+				<div class="full-width neutral">
+				<section>
+					<h3>OK, but what is <em>reasonable</em>?</h3>
+					<p>Fair question. All software must make choices and those choices reflect the values of its creators. A Reasonable Website tries its very best to make reasonable choices and explicity state its values.</p>
+					<p>Websites can do so much (so much!), but <abbr title="A Reasonable Website">ARW</abbr> has just three goals: a reasonable website should be <em>accessible</em>, <em>performant</em>, and <em>nice-looking</em>.</p>
+				</section>
+				</div>
+				
+				<section>
+					<div class="flex-header">
+						<svg title class="icon icon-accessibility" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><title>Person in a wheelchair leaning forward, in motion</title><path class="icon-fill" d="m19.839 42.792c1.948 0 3.759-.598 5.26-1.619l3.725 3.725c-2.477 1.942-5.595 3.102-8.985 3.102-8.055 0-14.585-6.53-14.585-14.584 0-3.391 1.161-6.509 3.102-8.986l3.725 3.725c-1.021 1.501-1.619 3.312-1.619 5.261 0 5.17 4.206 9.376 9.377 9.376zm22.098-21.028c-.576-.591-1.38-.902-2.201-.857l-9.943.553 5.472-6.232c.779-.888 1.002-2.071.7-3.129-.159-.724-.597-1.384-1.272-1.805-.02-.015-13.08-7.601-13.08-7.601-1.066-.62-2.41-.483-3.33.338l-6.379 5.69c-1.176 1.048-1.279 2.851-.23 4.027 1.048 1.175 2.851 1.278 4.026.229l4.837-4.314 3.998 2.322-7.058 8.038c-2.926.477-5.559 1.826-7.626 3.77l3.685 3.685c1.666-1.515 3.878-2.439 6.302-2.439 5.171 0 9.377 4.206 9.377 9.377 0 2.424-.924 4.636-2.439 6.302l3.685 3.685c2.455-2.61 3.962-6.121 3.962-9.987 0-2.304-.535-4.482-1.486-6.419l3.849-.214-.936 11.485c-.128 1.57 1.041 2.946 2.611 3.074.078.006.157.009.234.009 1.47 0 2.718-1.129 2.84-2.62l1.201-14.745c.068-.822-.224-1.632-.799-2.222zm-5.282-12.217c2.636 0 4.773-2.137 4.773-4.773 0-2.637-2.137-4.774-4.773-4.774-2.637 0-4.774 2.137-4.774 4.774 0 2.636 2.137 4.773 4.774 4.773z" fill-rule="nonzero"/></svg>
+						<h4>1. Be Accessible </h4>
+					</div>
 					
-				<h4>1. Be Accessible</h4>
-				<p>The Web is for everyone and websites should accessible to the largest possible audience. Millions of humans<sup><a href="#footnote-3">3</a></sup> live with some form of physical or cognitive disability.</p>
-				<p><abbr title="A Reasonable Website">ARW</abbr> tries to work well on all kinds of devices. It makes reasonable decisions about HTML element attributes, color constrast, and font sizes that prioritize accessibility.</p>
-				<p>Sometimes a small amount of code and a reasonable amount of effort can make a website usable for some person. <abbr title="A Reasonable Website">ARW</abbr> tries to find those instances and then do that work.</p>
+					<p><mark>The Web is for everyone</mark>, including people with disabilities. Websites should make themselves accessible to the largest possible audience. Millions of humans<sup><a title="Footnote #3" href="#footnote-3">3</a></sup> live with some form of physical or cognitive disability. Those disabilities can impair and alter people's ability to use the Web.</p>
+					<p>Sometimes a small amount of code and a reasonable amount of effort can make a website easier to use for a large number of people. <abbr title="A Reasonable Website">ARW</abbr> tries to find those instances and do that work.</p>
+					<p><abbr title="A Reasonable Website">ARW</abbr> works well on all kinds of devices and screens. It makes reasonable decisions about HTML element attributes, color constrast, and font sizes that prioritize accessibility.</p>
+					
+					<div class="flex-header">
+						<svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>A clock</title><circle class="icon-color" cx="12" cy="12" r="10"></circle><polyline class="icon-color" points="12 6 12 12 16 14"></polyline></svg>
+						<h4>2. Be Performant</h4>
+					</div>
+					<p><mark>The Web is for everyone</mark>, including people who lack access to fast connections and unmetered data.</p>
+					<p>Small and fast websites are good websites! They save time, energy, and bandwidth with each page load.</p>
+					<p>The <abbr title="A Reasonable Website">ARW</abbr> base template is just SOME KB. It loads quickly, it can be cached, it scrolls and responds to clicks and key presses as one would expect.</p>
+					<p>It uses system font stacks, tiny SVGs for graphical elements, and generally prefers the good and fast solutions over the perfect and slower ones.</p>
+					
+					<div class="flex-header">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><title>An open eye</title><path class="icon-color" d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle class="icon-color" cx="12" cy="12" r="3"></circle></svg>
+						<h4>3. Be Nice-Looking</h4>
+					</div>
+					<p><mark>The Web is for everyone</mark> and a well-designed Web benefits everyone. There is no reason that an accessible, performant website shouldn't also work well and be kinda nice to look at.</p>
+				</section>
 
-				<h4>2. Be Performant</h4>
-				<p>Small and fast websites are good websites! They save time, energy, and bandwidth with each page load.</p>
-				<p>The <abbr title="A Reasonable Website">ARW</abbr> base template is just 3.6KB. It loads quickly, it can be cached, it scrolls and responds to clicks and key presses as one would expect.</p>
-				<p>It uses system font stacks, tiny SVGs for graphical elements, and generally prefers the good and fast solutions over the perfect and slower ones.</p>
-				<p>ARW
-				
-				<h4>3. Be Nice-Looking</h4>
-				<p>There is no reason that an accessible, performant website shouldn't also be kinda nice to look at and a joy to use.</p>
-				<p><abbr title="A Reasonable Website">ARW</abbr> tries, whenever possible, to be enjoyable, kinda nice to look at, and easy to read. It strives for a thoughtful, consistent design.</p>
+				<section>
+					<h3>How might I use this?</h3>
+					<p><abbr title="A Reasonable Website">ARW</abbr> might be used for any small project that needs a well-performing, thoughtfully designed website.</p>
+					<p>The <abbr title="A Reasonable Website">ARW</abbr> base template includes a common set of HTML elements that are appropriate for most sites.</p>
 
-				<h3>How might I use this?</h3>
-				<p><abbr title="A Reasonable Website">ARW</abbr> might be used for any small project that needs a well-performing, thoughtfully designed website.</p>
-				<p>The <abbr title="A Reasonable Website">ARW</abbr> base template includes a common set of HTML elements that are appropriate for many sites.</p>
+					<h4>Quick-start Templates</h4>
+					<p>For a few common, expected use cases, <abbr title="A Reasonable Website">ARW</abbr> includes templates to make getting started a bit easier.</p>
+					<ul>
+						<li><a title="" href="">A small, personal website</a></li>
+						<li><a title="" href="">A blog</a></li>
+						<li><a title="" href="">A news article or essay</a></li>
+						<li><a title="" href="">An art project</a></li>
+					</ul>
+				</section>
 				
-				<h4>Quick-start Templates</h4>
-				<p>For a few common, expected use cases, <abbr title="A Reasonable Website">ARW</abbr> includes templates to make getting started a bit easier.</p>
+
+				<!-- <h4>Static-site Templates</h4>
+				<p>For a few popular static-site generators, ARW includes templates.</p> 
 				<ul>
-					<li><a title="" href="">A small, personal website</a></li>
-					<li><a title="" href="">A blog</a></li>
-					<li><a title="" href="">A news article or essay</a></li>
-					<li><a title="" href="">An art project</a></li>
+					<li><a title="" href="">Next.js</a></li>
+					<li><a title="" href="">Gatsby</a></li>
+					<li><a title="" href="">Hugo</a></li>
+					<li><a title="" href="">Jekyl</a></li>
 				</ul>
-
-				<h3>Who made this?</h3>
-				<p>Reasonable.css was created by <a href="https://www.matthewhowell.net">Matthew Howell</a>, a human, trying his best. Like all things in life, it couldn't exist without the help and generosity of others, find a <a href="#acknowledgements">full list of acknowledgements here.</a></p>
+			-->
+				
+				<section>
+					<h3>Colors</h3>
+					<hr class="gradient" />
+					
+					<p>A Reasonable Website includes 8 accessible, kinda nice-looking, color palettes, each with a light and dark variety.</p>
+					<p>All palettes and example color combinations meet or exceed <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.1 Level AA contrast requirements for small text, large text, and graphical elements.</p>
+	
+					<form id="color-element" onsubmit="changeColorPalette(event);">
+						<label for="color-select">Color preview:</label>
+						<select id="color-select"">
+							<option value="red">Red</option>
+							<option value="red-dark">Red Dark</option>
+							<option value="orange">Orange</option>
+							<option value="orange-dark">Orange Dark</option>
+							<option value="yellow">Yellow</option>
+							<option value="yellow-dark">Yellow Dark</option>
+							<option value="blue">Blue</option>
+							<option value="blue-dark">Blue Dark</option>
+							<option value="green">Green</option>
+							<option value="green-dark">Green Dark</option>
+							<option value="purple">Purple</option>
+							<option value="purple-dark">Purple Dark</option>
+							<option value="pink">Pink</option>
+							<option value="pink-dark">Pink Dark</option>
+							<option value="gray">Gray</option>
+							<option value="gray-dark">Gray Dark</option>
+						</select>
+						<button id="color-submit" type="submit" >Go →</button>
+					</form>
+				</section>
 				
 				<footer>
-					<h5>Footnotes</h5>
+					<h4>Footnotes</h4>
 					<dl>
 						<dt id="footnote-1">1</dt>
 						<dd>Subjectively pretty nice-looking!</dd>
@@ -77,61 +138,36 @@
 
 						<dt id="footnote-3">3</dt>
 						<dd><a title="CDC: 1 in 4 US adults live with a disability" href="https://www.cdc.gov/media/releases/2018/p0816-disability.html">According to the CDC</a>, about 1 in 4 Americans live with a disability.</dd>
-
-						
 					</dl>
 				</footer>
 			</article>
-		
-			<!-- color -->
-			<hr />		
-			<section>
-				<h3>Colors</h3>
-				<p>A Reasonable Website includes 8 accessible, kinda nice-looking, color palettes, each with a light and dark variety.</p>
-				<p>All palettes and example color combinations meet or exceed <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.1 Level AA contrast requirements for small text, large text, and graphical elements.</p>
-	<!-- 
-				<hr />
-				<img class="palette-preview" src="./images/palette-previews/blue.png" /> -->
-
-				<hr class="gradient" />
-				<form id="color-element" onsubmit="changeColorPalette(event);">
-					<label for="color-select">Color preview:</label>
-					<select id="color-select"">
-						<option value="red">Red</option>
-						<option value="red-dark">Red Dark</option>
-						<option value="orange">Orange</option>
-						<option value="orange-dark">Orange Dark</option>
-						<option value="yellow">Yellow</option>
-						<option value="yellow-dark">Yellow Dark</option>
-						<option value="blue">Blue</option>
-						<option value="blue-dark">Blue Dark</option>
-						<option value="green">Green</option>
-						<option value="green-dark">Green Dark</option>
-						<option value="purple">Purple</option>
-						<option value="purple-dark">Purple Dark</option>
-						<option value="pink">Pink</option>
-						<option value="pink-dark">Pink Dark</option>
-						<option value="gray">Gray</option>
-						<option value="gray-dark">Gray Dark</option>
-					</select>
-					<button id="color-submit" type="submit" >Go →</button>
-				</form>
-
-			</section>
 
 			<!-- acknowledgements, credits, and thanks -->
-			<div class="full-bg neutral">
+			<div class="full-width neutral">
 			<section>
 				<a name="acknowledgements"></a>
 				<h2>Acknowledge&shy;ments, Credits, and Thanks</h2>
 
 				<h4>A11y.coffee</h4>
-				<p>Thanks to the wonderful <a title="" href="https://a11y.coffee">a11y.coffee</a> for its clear and consise explaination of accessibility problems, goals, and strategies.</p>
-
+				<p>Thanks to the generous <a title="Amberley Romo's Twitter handle (@amber1ey)" href="https://twitter.com/amber1ey">Amberley Romo</a> and the wonderful <a title="Read more about web accessibility" href="https://a11y.coffee">a11y.coffee</a> for its clear and concise explaination of common accessibility problems, goals, and strategies.</p>
+				
+				<h4>Cole Bemus</h4>
+				<p>Thanks to <a href="https://colebemis.com/">Cole Bemus</a> for his very nice-looking <a title="" href="https://github.com/feathericons/feather">Feather icons</a>. This site uses the clock icon in the <em>Be Performant</em> heading and the eye icon in the <em>Be Nice-Looking</em>.</p>
+					
+				<h4>Laura Kalbag</h4>
+				<p>Thanks to <a href="https://laurakalbag.com">Laura Kalbag</a> for her book <a href="https://abookapart.com/products/accessibility-for-everyone">Accessibility For Everyone</a> and for all of her work at the <a href="https://small-tech.org">Small Technology Foundation</a>.</p>
+				<p>Anyone can <a href="https://small-tech.org/fund-us/">donate to the Small Technology Foundation here</a>.</p>
+				
 				<h4>MDN Web Docs</h4>
 				<p>The wonderful <a title="" href="https://developer.mozilla.org/en-US/">MDN Web Docs</a> are an absolutely essential resource for anyone doing work on the web.</p>
 				<p>Anyone can <a href="https://donate.mozilla.org">donate to Mozilla here.</a></p>
 
+				<h4>Triangle</h4>
+				<p>Thanks to <a href="https://triangle-inc.org/">Triangle</a> and <a href="http://accessibleicon.org/">The Accessible Icon Project</a>. This site uses the icon in the <em>Be Accessible</em> heading.</p>
+				<p>Anyone can <a title="" href="https://triangle.ejoinme.org/MyPages/MovingForwardProject/tabid/415699/Default.aspx">donate to Triangle here</a>.</p>
+
+
+				TODO:
 				https://www.a11yproject.com
 				https://webaim.org
 				https://www.w3.org/WAI/
@@ -150,14 +186,24 @@
 
 			</section>
 			</div>
+
+			<!-- who made this -->
+			<section>
+				<h3>Who made this?</h3>
+				<p>Reasonable.css was created by <a href="https://www.matthewhowell.net">Matthew Howell</a>, a human, trying his best. Like all things in life, it couldn't exist without the help and generosity of others, find a <a href="#acknowledgements">full list of acknowledgements here.</a></p>
+			</section>
+			
 		</main>
 
-
-		<footer>
-			<p>A Reasonable Website is a piece of <a href="" title="Read more about Reasonable Stuff">Reasonable Work</a>, a collection of small, reusable, and reasonable pieces of technology and other things.</p>
-			<p>It was created in 2020 by <a href="">Matthew Howell</a>, with an amazing amount of <a href="#acknowledgements">help from others</a>.</p>
-			<p><mark>May we all–<em>forever</em>–be the publishers of our own hypertext.</mark></p>
-		</footer>
+		<hr />
+		<section>
+			<footer>
+				<p>A Reasonable Website is a piece of <a href="" title="Read more about Reasonable Stuff">Reasonable Work</a>, a collection of small, reusable, and reasonable pieces of technology and other things.</p>
+				<p>It was created in 2020 by <a href="">Matthew Howell</a>, with an amazing amount of <a href="#acknowledgements">help from others</a>.</p>
+				<p><mark>May we all–<em>forever</em>–be the publishers of our own hypertext.</mark></p>
+			</footer>
+		</section>
+		
 		<script>
 
 			// other available color palette style sheets
