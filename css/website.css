@@ -369,11 +369,11 @@ hr.gradient {
 .icon {
 	height: 1.5rem;
 	margin-right: 1rem;
+	stroke: var(--color-medium);
 }
 
 .icon-fill {
 	fill: var(--color-medium);
-	stroke: var(--color-medium);
 }
 
 .icon-color {
