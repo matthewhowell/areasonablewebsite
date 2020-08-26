@@ -1,11 +1,11 @@
 :root {
 	
 	--color-blue-lighter: #F6F8FE;
-	--color-blue-light: #C2D3F5;
+	--color-blue-light: #B8D0FF;
 	--color-blue-medium: #5D88EF;
 	--color-blue-dark: #0D52F2;
 	--color-blue-darker: #0F3A8A;
-	/* https://webaim.org/resources/contrastchecker/?fcolor=C2D3F5&bcolor=0B48D5 */
+	/* https://webaim.org/resources/contrastchecker/?fcolor=B8D0FF&bcolor=0B48D5 */
 
 	--color-gray-lighter: #F4F4F6;
 	--color-gray-light: #D1D3DB;
@@ -107,7 +107,6 @@
 	/* orange red pink */
 	--gradient-yor: linear-gradient(90deg, rgba(255,243,82,.5) 0%, rgba(238,109,58,.5) 50%, rgba(245,71,94,.5) 100%);
 
-
 	--gradient-reasonable: linear-gradient(90deg, rgba(245,71,94,.5) 0%, rgba(238,109,58,.5) 16%, rgba(255,243,82,.5) 32%, rgba(22,162,110,.5) 48%, rgba(93,136,239,.5) 64%, rgba(138,104,232,.5) 80%, rgba(225,71,199,.5) 100%);
 
 	/* system font sans serif stack */
@@ -128,6 +127,7 @@
 	--color-neutral-dark: #3B3A41;
 	--color-selection-dark: #3B3A41;
 	--color-text-dark: #EFEFF0;
+
 	/* FEFFFF */
 	/* light mode background color, neutral, and text color */
 	--color-backround-light: #FFFFFF;
@@ -145,114 +145,108 @@
 
 body {
 
-	/* body should expand to full width of window */
-	width: 100%;
-	max-width: 100%;
-
-	/* body content should be centered */
-	margin: 0 auto;
-
-	/* top padding before content begins */
-	padding: 0rem 0 0 0;
-
-	/* border-top: .5rem solid var(--color-purple-lighter); */
-	/* border-bottom: .5rem solid var(--color-purple-lighter); */
+	/* a bottom border for the site */
+	/* uses the lightest shade in the palette */
 	border-bottom: .25rem solid var(--color-lighter);
-	
-	/* top triangle border */
-	background-repeat: repeat-x;
-	background-size: 2rem;
-
-	/* light mode */
-	background-color: var(--color-background);
-	color: var(--color-text);
-/* 
-	background-image: url("./../images/stroke-hexagon.svg");
-	background-image: url("./../images/fill-hexagon.svg");
-
-	background-image: url("./../images/stroke-octogon.svg");
-	background-image: url("./../images/fill-octogon.svg");
-
-	background-image: url("./../images/stroke-diamond.svg");
-	background-image: url("./../images/fill-diamond.svg");
-
-	background-image: url("./../images/fill-circle.svg");
-	background-image: url("./../images/stroke-circle.svg"); */
-
-	/* OPTIONAL */
-	/* show only the bottom half of any background pattern */
-	/* turns a diamond into a hanging triangle, a circle into a hanging semicircle, etc */
-	/* background-position-y: -1rem; */
-
-	font-size: 1.25rem;
 
 }
 
-main > header  {
-	padding-top: 2rem;
-	margin-bottom: 2rem;
-}
-
-.sticky-header-background {
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: .25rem;
-	background: transparent;
-}
-
-.bg-gradient {
-	background: var(--gradient);
-}
-
-.mb-1 { margin-bottom: 1rem; }
-.mb-2 { margin-bottom: 2rem; }
-.mb-3 { margin-bottom: 3rem; }
-.mb-4 { margin-bottom: 4rem; }
-
-mark {
-	background-color: var(--color-light);
-}
-
-/* <a> */
-a, a:active {
-	/* dark purple link color */
-	color: var(--color-link);
-}
-	/* darker purple for visited links */
-	a:visited {
-		color: var(--color-link-visited);
-	}
- 	
-	 a:hover {
-		color: var(--color-link-hover);
-	}
- 
-a {
-	text-decoration-color: var(--color-decoration);
-}
-
+/* the four primary HTML elements used to denote content sections */
+/* each will handle its own layout */
+/* each can be wrapped in a <div class="full-width"></div> to apply a background color */
 article,
 footer,
 header,
 section {
 
+	/* use border box to make the math more obvious */
+	box-sizing: border-box;
+
 	/* 608px single column */
 	/* aiming to get a reasonable number (60) of characters per line */
 	max-width: 40rem;
 	
+	/* 320px minimum width */
 	/* minimum width for readable text */
+	/* this nicely supports older, narrower mobile devices */
 	min-width: 20rem;
 	
-	/* 32px margins on top and bottom, centered horzontally */
+	/* 32px margins on the bottom, centered horzontally */
 	margin: 0 auto 2rem auto;
 	
 	/* 16px padding on the sides */
 	padding: 0 1rem;
 
-	box-sizing: border-box;
 }
+
+/* used for a <div> that wraps article, footer, header, or section */
+/* allows a full width background color to be applied */
+.full-width {
+
+	/* full with, only use within full width elements */
+	width: 100%;
+
+	/* allow full width */
+	max-width: none;
+
+	/* bottom margin and center horizontally */
+	margin: 0 auto 2rem auto;
+
+	/* vertical padding, anticipating a background color */
+	padding: 2rem 0rem;
+}
+
+/* target the four content sectioning elements */
+/* when wrapped in a .full-width <div> */
+.full-width > article,
+.full-width > footer,
+.full-width > header,
+.full-width > section {
+
+	/* remove the bottom margin */
+	/* this space will be replicated by the vertical padding in the parent .full-width element */
+	margin-bottom: 0;
+
+}
+
+/* decorative header bar at the very top of the site */
+.sticky-header-background {
+
+	/* fixed position at the top of the window */
+	position: fixed;
+
+	/* 0px off the top */
+	top: 0px;
+
+	/* 0px off the left */
+	left: 0px;
+
+	/* span the full width */
+	width: 100%;
+
+	/* 4px height */
+	height: .25rem;
+
+	/* no background */
+	/* will use an additional class to apply a color or gradient */
+	background: transparent;
+
+}
+
+.bg-gradient {
+
+	/* background gradient from the site palette */
+	background: var(--gradient);
+
+}
+
+/* utility classes for adding bottom margins */
+.mb-0 { margin-bottom: 0rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+.mb-3 { margin-bottom: 3rem; }
+.mb-4 { margin-bottom: 4rem; }
+
 
 article { padding: 0; max-width: none;}
 
@@ -261,29 +255,30 @@ article section {
 	margin: 0 auto 2rem auto;
 }
 
-.full-width > section {
-	margin-bottom: 0;
+/* site header */
+main > header  {
+
+	/* add top padding */
+	padding-top: 2rem;
+
+	/* add bottom margin */
+	margin-bottom: 2rem;
 }
-header, footer {
 
-	/* minimum width for readable text */
-	min-width: 16rem;
+/* the site footer, different than article or section footer */
+main > footer {
 
-}
-
-/* the website footer */
-footer {
-
+	/* smaller font size for the site footer */
 	font-size: 1rem;
 	
-	/* allows a little breathing room at the bottom of the page scroll */
-	margin: 0 auto;
-	padding: 1rem 0;
-	box-sizing: border-box;
+	/* more vertical padding on the site footer */	
+	padding: 2rem 1rem;
+
 }
 
-article > footer {
-	border-left: 2px solid var(--color-neutral);
+/* article footers, section footers */
+/* not the site footer */
+article > footer, section > footer {
 	font-size: 1rem;
 	padding: 1rem;
 	box-sizing: border-box;
@@ -293,105 +288,159 @@ article > footer {
 	background-color: var(--color-neutral);
 }
 
-.full-width {
-	width: 100%;
-	max-width: none;
-	margin: 0 auto 2rem auto;
-	padding: 2rem 0rem;
+/* footnotes description list term elements */
+.footnotes dl dt {
+
+	/* remove bold font for footnote numbers */
+	font-weight: normal;
+
 }
 
-dl dt { font-weight: normal;  }
-dl dd { margin-left: 1rem; }
+/* footnotes definition list definition elements */
+.footnotes dl dd {
 
-sup { 
-	padding: 1px 0;
-	background-color: var(--color-selection);
+	/* 16px margin to separate from the <dt> elements */
+	margin-left: 1rem;
+
 }
 
+/* sup element links used as inline footnotes links */
+sup > a {
+
+	/* add vertical and horizontal padding */
+	padding: 1px 4px;
+
+	/* add background color */
+	background-color: var(--color-lighter);
+
+}
+
+/* unordered list element */
 ul {
+
+	/* remove list style */
 	list-style: none;
+
 }
 
+/* :before list item, used to style bullet */
 li:before {
+
+	/* add bullet character */
 	content: '●';
+
+	/* use decoration color */
 	color: var(--color-decoration);
+
+	/* use inline block for easier layout control */
 	display: inline-block;
+
+	/* explicit width of 20px */
 	width: 1.25rem;
+
+	/* negative margin to pull back */
 	margin-left: -1.25rem;
 }
 
-/* li li:before { content: '○'} */
+/* ? */
 li > ul { padding-top: 0; }
 
-
+/* selected text */
 ::selection {
+
+	/* use selection background color from palette */
 	background-color: var(--color-selection); 
 }
 
-::-moz-selection { 
+/* selected text */
+/* browser: firefox */
+::-moz-selection {
+
+	/* use selection background color from palette */
 	background-color: var(--color-selection); 
 }
 
+/* heading elements */
 h1, h2, h3, h4, h5, h6 {
+
+	/* underline headings */
 	text-decoration: underline;
+
+	/* decoration color from the palette */
 	text-decoration-color: var(--color-decoration);
+
 }
 
+/* form buttons */
 button, input[type=submit], input[type=button] {
-	background-color: var(--color-neutral);
+
+	/* background light color from the palette */
+	background-color: var(--color-light);
+
+	/* remove default button border */
+	border: none;
+	
 }
 
-.palette-preview {
-	display: inline-block;
-	width: 8rem;
-	border: 1px solid var(--color-gray-light);
-	border-radius: 4px;
-	border-top: none;
-}
-
+/* decorative gradient for the colors section */
 hr.gradient {
+
+	/* increase hr height to 16px */
 	height: 1rem;
+
+	/* use the reasonable gradient, from reasonable colors */
 	background: var(--gradient-reasonable);
 }
 
-.flex-header {
+/* a flexbox container for headings with icons */
+.flex-heading {
+
+	/* use flexbox to allow icon and heading on the same line */
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+
+	/* add a bottom margin to the container */
 	margin-bottom: 1rem;
+
 }
 
-.flex-header h4 {
-	margin: 0;
-	line-height: 1.5rem;
-}
+	/* adjustments for h4 headings within the flexbox container */
+	.flex-heading > h4 {
 
-.icon {
-	height: 1.5rem;
-	margin-right: 1rem;
-	stroke: var(--color-medium);
-}
+		/* remove the margin */
+		margin: 0;
 
-.icon-fill {
-	fill: var(--color-medium);
-}
+		/* adjust the line height */
+		line-height: 1.5rem;
 
-.icon-color {
-	color: var(--color-medium);
-}
+	}
 
-.tag {
-	border-radius: 8px;
-	padding: 2px 8px;
-	margin: 0 4px 0 0;
-	font-family: var(--font-stack-sans);
-	font-size: .875rem;
-	text-transform: uppercase;
-	font-weight: bold;
-	background-color: var(--color-medium);
-	color:var(--color-lighter);
-}
+	/* adjustments for icons within the flexbox container */
+	.flex-heading > .icon {
 
-p:last-child {
-	margin-bottom: 0;
-}
+		/* height should match the line height of the heading */
+		height: 1.5rem;
+
+		/* put 16px space between the icon and the heading */
+		margin-right: 1rem;
+
+		/* this is an svg element */
+		/* adjust the stroke color to match the palette */
+		stroke: var(--color-medium);
+
+	}
+
+	/* used to adjust color for solid fill shapes */
+	.flex-heading .icon-fill {
+
+		/* safari fix to ensure the stroke/fill color if properly applied */
+		fill: var(--color-medium);
+
+	}
+
+	/* used to override svg color attribute */
+	.flex-heading .icon-color {
+
+		/* adjust the stroke color to match the palette */
+		color: var(--color-medium);
+
+	}

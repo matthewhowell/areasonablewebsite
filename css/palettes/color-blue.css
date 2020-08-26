@@ -2,17 +2,18 @@
 	
 	/* each palette includes 5 shades */
 	--color-lighter: #F6F8FE;
-	--color-light: #C2D3F5;
+	--color-light: #B8D0FF;
 	--color-medium: #5D88EF;
 	--color-dark: #0D52F2;
 	--color-darker: #0F3A8A;
 
 	/* each palette includes a gradient */
+	/* purple to blue to green */
 	--gradient: linear-gradient(90deg, rgba(138,104,232,.5) 0%, rgba(93,136,239,.5) 50%, rgba(22,162,110,.5) 100%);
 	
 	/* those shades also define link colors */
 	--color-link: var(--color-dark);
-	--color-link-visited: var(--color-darker);
+	--color-link-visited: var(--color-dark);
 	--color-link-hover: var(--color-medium);
 
 	/* and text decoration (mainly underlines) */

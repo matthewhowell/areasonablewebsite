@@ -402,28 +402,32 @@ html {
 
 /* <body> */
 body {
-	/* more line height for the text */
-    line-height: 1.5;
 
-	/* apply serif font stack to body text */
-	font-family: var(--font-stack-serif);
-	
-	/* not quite black text */
-	color: var(--color-gray);
-	
-	/* 640px single column */
-	max-width: 40rem;
-	
+	/* body should expand to full width of window */
+	width: 100%;
+	max-width: 100%;
+		
 	/* minimum width for readable text */
 	min-width: 20rem;
 	
 	/* 32px margins on top and bottom, centered horzontally */
 	margin: 0 auto;
 	
-	/* 16px padding on the sides */
-	padding: 1rem;
+	/* no body padding to sallow full width background colors */
+	padding: 0;
+	
+	/* more line height for the text */
+	line-height: 1.5;
 
-	/* hyphens: auto; */
+	/* apply serif font stack to body text */
+	font-family: var(--font-stack-serif);
+
+	/* 20px body font size */
+	font-size: 1.25rem;
+	
+	/* light mode */
+	background-color: var(--color-background);
+	color: var(--color-text);
 }
 
 /* HTML elements */
@@ -460,21 +464,21 @@ hgroup > h6 {
 }
  
 /* <a> */
-a, a:active, a:hover {
-	/* dark purple link color */
-	color: var(--color-purple-dark);
+a, a:active {
+	/* link color defined in palette */
+	color: var(--color-link);
 }
-	/* medium purple for visited links */
+	/* link color defined in palette */
 	a:visited {
-		color: var(--color-purple-medium);
+		color: var(--color-link-visited);
+	}
+ 
+	/* link color defined in palette */	
+	a:hover {
+		color: var(--color-link-hover);
 	}
 
-address {
-
-}
-
 /* <nav> */
-
 /* <nav><a> */
 nav a {
 	/* add comfortable space between each nav link */
@@ -520,11 +524,13 @@ hr {
 
 /* <mark> */
 mark {
-	/* background color for marked text */
-	background-color: var(--color-highlight);
-	
-	/* additional horizontal padding to make background color more prominent */
-	padding: 0 .25rem;
+
+	/* background color from the site palette */
+	background-color: var(--color-selection);
+
+	/* padding around the text for more visual distinction */
+	padding: 2px 4px;
+
 }
 
 code,
@@ -747,6 +753,7 @@ button:active, input[type=submit]:active, input[type=button]:active {
 em > em {
 	font-weight: bold;
 }
+
 meter {
 	/* -webkit-appearance: none; */
 	vertical-align: middle;
@@ -823,6 +830,10 @@ p {
 	word-wrap: break-word;
 	margin: 0 0 1rem 0;
 }
+
+	p:last-child {
+		margin-bottom: 0;
+	}
 
 /* forms */
 /* <form>, <fieldset> */
