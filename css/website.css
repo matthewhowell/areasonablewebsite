@@ -179,13 +179,6 @@ section {
 
 }
 
-article { padding: 0; max-width: none;}
-
-article section {
-	padding: 0 1rem;
-	margin: 0 auto 2rem auto;
-}
-
 /* used for a <div> that wraps article, footer, header, or section */
 /* allows a full width background color to be applied */
 .full-width {
@@ -216,12 +209,16 @@ article section {
 
 }
 
-/* ? */
-article { padding: 0; max-width: none;}
-article section {
-	padding: 0 1rem;
-	margin: 0 auto 2rem auto;
+/* article specifics */
+article {
+
+	/* remove article padding */
+	padding: 0;
+
+	/* remove article max width to allow full color backgrounds */
+	max-width: none;
 }
+
 
 /* decorative header bar at the very top of the site */
 .fixed-header-background {
