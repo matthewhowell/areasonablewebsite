@@ -14,7 +14,7 @@
 	/* those shades also define link colors */
 	--color-link: var(--color-dark);
 	--color-link-visited: var(--color-dark);
-	--color-link-hover: var(--color-medium);
+	--color-link-hover: var(--color-dark);
 
 	/* and text decoration (mainly underlines) */
 	--color-decoration: var(--color-light);
