@@ -3,6 +3,7 @@
 	<head>	
 		<meta charset="utf-8">
 		<title>A Reasonable Website</title>
+
 		<meta name="description" content="A Reasonable Website is a template that anyone can use to make an accessible, fast, and kinda nice-looking website.">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -10,14 +11,11 @@
 		<link rel="stylesheet" href="./css/reasonable.css" />
 		<link rel="stylesheet" href="./css/website.css" />
 		<link rel="stylesheet" href="./css/palettes/color-blue.css" name="css-color">
-		<!-- <link rel="stylesheet" href="./css/mode-light.css" name="css-mode"> -->
-		<!-- <link rel="stylesheet" href="./css/gradient-ppb.css" name="css-gradient"> -->
-		<!-- <link rel="stylesheet" href="./css/patterns/stroke-circle-purple.css" name="css-pattern"> -->
-		
 	</head>
-	<body class="light">
-		<div class="fixed-header-background bg-gradient"></div>
-
+	<body>
+		<div class="full-width fixed-header bg-gradient"></div>
+		<div class="full-width fixed-header version"><code title="Version 0.1 is the current stable release">version 0.1</code></div>
+		
 		<main>
 			<header>
 				<h1><a name="h1"></a>A Reasonable Website</h1>
@@ -25,7 +23,6 @@
 			</header>
 
 			<article>
-
 				<section>
 					<h2>Why does this exist?</h2>
 					<p>A Reasonable Website (<abbr title="A Reasonable Website">ARW</abbr>) exists to help humans make nice websites. It is designed to be a simple, free, and universal vehicle for pushing hypertext out into the world.</p>
@@ -33,7 +30,7 @@
 
 				<section>
 					<h3>Can I use this?</h3>
-					<p><abbr title="A Reasonable Website">ARW</abbr> is free software<sup><a title="Footnote #2" href="#footnote-2">2</a></sup>. The full, annotated source code is available, and it is released here under the <a href="https://choosealicense.com/licenses/mit/">MIT License</a>.</p>
+					<p><abbr title="A Reasonable Website">ARW</abbr> is free software<sup><a title="Footnote #2" href="#footnote-2">2</a></sup>. The <a href="https://github.com/matthewhowell/areasonablewebsite">full, annotated source code</a> is available, and it is released here under the <a href="https://choosealicense.com/licenses/mit/">MIT License</a>.</p>
 					<p>The current version (0.1) is usable, but in steady development. Check back later for a more stable release.</p>
 				</section>
 
@@ -44,13 +41,13 @@
 					<p>Websites can do so much (so much!), but <abbr title="A Reasonable Website">ARW</abbr> has just three goals: a reasonable website should be <em>accessible</em>, <em>performant</em>, and <em>nice-looking</em>.</p>
 				</section>
 				</div>
-				
+
 				<section>
 					<div class="flex-heading">
 						<h4>1. Be Accessible </h4>
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="icon icon-accessibility"  clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 48 48" ><title>Person in a wheelchair leaning forward, in motion</title><path class="icon-fill" d="m19.839 42.792c1.948 0 3.759-.598 5.26-1.619l3.725 3.725c-2.477 1.942-5.595 3.102-8.985 3.102-8.055 0-14.585-6.53-14.585-14.584 0-3.391 1.161-6.509 3.102-8.986l3.725 3.725c-1.021 1.501-1.619 3.312-1.619 5.261 0 5.17 4.206 9.376 9.377 9.376zm22.098-21.028c-.576-.591-1.38-.902-2.201-.857l-9.943.553 5.472-6.232c.779-.888 1.002-2.071.7-3.129-.159-.724-.597-1.384-1.272-1.805-.02-.015-13.08-7.601-13.08-7.601-1.066-.62-2.41-.483-3.33.338l-6.379 5.69c-1.176 1.048-1.279 2.851-.23 4.027 1.048 1.175 2.851 1.278 4.026.229l4.837-4.314 3.998 2.322-7.058 8.038c-2.926.477-5.559 1.826-7.626 3.77l3.685 3.685c1.666-1.515 3.878-2.439 6.302-2.439 5.171 0 9.377 4.206 9.377 9.377 0 2.424-.924 4.636-2.439 6.302l3.685 3.685c2.455-2.61 3.962-6.121 3.962-9.987 0-2.304-.535-4.482-1.486-6.419l3.849-.214-.936 11.485c-.128 1.57 1.041 2.946 2.611 3.074.078.006.157.009.234.009 1.47 0 2.718-1.129 2.84-2.62l1.201-14.745c.068-.822-.224-1.632-.799-2.222zm-5.282-12.217c2.636 0 4.773-2.137 4.773-4.773 0-2.637-2.137-4.774-4.773-4.774-2.637 0-4.774 2.137-4.774 4.774 0 2.636 2.137 4.773 4.774 4.773z" fill-rule="nonzero"/></svg>
 					</div>
-					
+
 					<p><mark>The Web is for everyone</mark>, including people with disabilities. Websites should make themselves accessible to the largest possible audience. Millions of humans<sup><a title="Footnote #3" href="#footnote-3">3</a></sup> live with some form of physical or cognitive disability. Those disabilities can impair and alter people's ability to use the Web.</p>
 					<p>Sometimes a small amount of code and a reasonable amount of effort can make a website easier to use for a large number of people. <abbr title="A Reasonable Website">ARW</abbr> tries to find those instances and do that work.</p>
 					<p><abbr title="A Reasonable Website">ARW</abbr> works well on all kinds of devices and screens. It makes reasonable decisions about HTML element attributes, color constrast, and font sizes that prioritize accessibility.</p>
@@ -85,41 +82,28 @@
 						<li><a title="" href="">An art project</a></li>
 					</ul>
 				</section>
-				
 
-				<!-- <h4>Static-site Templates</h4>
-				<p>For a few popular static-site generators, ARW includes templates.</p> 
-				<ul>
-					<li><a title="" href="">Next.js</a></li>
-					<li><a title="" href="">Gatsby</a></li>
-					<li><a title="" href="">Hugo</a></li>
-					<li><a title="" href="">Jekyl</a></li>
-				</ul>
-			-->
-				
 				<section>
 					<h3>Colors</h3>
-					<hr class="gradient" />
-					
+					<hr class="gradient-color" />
+
 					<p>A Reasonable Website includes 4 accessible, kinda nice-looking, color palettes.</p>
 					<p>All palettes and example color combinations meet or exceed <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.1 Level AA contrast requirements for small text, large text, and graphical elements.</p>
 	
 					<form id="color-element" onsubmit="changeColorPalette(event);">
 						<div class="form-element-container">
-						<label for="color-select">Color preview:</label>
+						<label for="color-select">Color palette preview:</label>
 						<select id="color-select"">
 							<option value="blue">Blue</option>
 							<option value="green">Green</option>
 							<option value="purple">Purple</option>
 							<option value="gray">Gray</option>
 						</select>
-						<button id="color-submit" type="submit" >Go →</button>
-						<input type="text" />
-						<input type="button" value="Submit" />
+						<button id="color-submit" type="submit" >Switch Palette →</button>
 					</div>
 					</form>
 				</section>
-				
+
 				<footer class="footnotes">
 					<h4>Footnotes</h4>
 					<dl>

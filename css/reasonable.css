@@ -89,8 +89,12 @@ h1, h2, h3, h4, h5, h6 {
 	/* tighter line height for headers */
 	line-height: 1.25;
 	
+	/* remove top margin for headers */
 	margin-top: 0;
+
+	/* add bottom margin for headers */
 	margin-bottom: 1rem;
+
 }
 
 /* h1 h2 h3 h4 h5 h6 */
@@ -102,15 +106,17 @@ h4 { font-size: 1.25rem; }
 h5 { font-size: 1.25rem; }
 h6 { font-size: 1.25rem; }
 
-/* hgroup headings */
-hgroup > h1,
-hgroup > h2,
-hgroup > h3,
-hgroup > h4,
-hgroup > h5,
-hgroup > h6 {
-	margin-bottom: 1rem;
-}
+			/* hgroup headings */
+			/* hgroup > h1,
+			hgroup > h2,
+			hgroup > h3,
+			hgroup > h4,
+			hgroup > h5,
+			hgroup > h6 {
+
+				margin-bottom: 1rem;
+
+			} */
  
 /* <a> */
 a, a:active {
@@ -137,7 +143,7 @@ a, a:active {
 		text-decoration: none;
 	}
 
-	/* link focus state */
+	/* link focus state for keyboard users */
 	a:focus {
 
 		/* use link hover color defined in palette */
@@ -154,8 +160,14 @@ a, a:active {
 	}
 
 /* <nav> */
+nav {
+	
+	font-family: var(--font-stack-sans);
+
+}
 /* <nav><a> */
 nav a {
+
 	/* add comfortable space between each nav link */
 	margin-right: 1rem;
 
@@ -164,19 +176,48 @@ nav a {
 }
 
 	nav a:last-child {
+
 		/* remove extraneous margin after last nav link */
 		margin-right: 0;
+
 	}
 
-nav > ul {
-	list-style-type: none;
-}
-/* <p> */
-p, aside {
-	/* bottom margin for paragraphs */
-	margin: 0 0 1rem;
+/* for list elements used inside of nav */
+/* nav ul { */
+
+	/* remove list style */
+	/* list-style: none; */
+
 }
 
+	/* nav ul li {
+
+		display: inline-block;
+	}
+
+	nav ul li:before {
+		content: '';
+	} */
+
+/* <p> */
+p, aside {
+
+	/* bottom margin for paragraphs */
+	margin: 0 0 1rem 0;
+	
+	/* break words with hyphens if necesary */
+	word-wrap: break-word;
+
+}
+
+	/* a paragraph that is not followed by another paragraph */
+	p:last-child {
+
+		/* remove the bottom margin */
+		margin-bottom: 0;
+	}
+
+	
 /* <hr> */
 hr {
 
@@ -208,9 +249,11 @@ mark {
 
 }
 
+
 code,
 kbd,
 pre {
+
 	/* monospace font stack */
 	font-family: var(--font-stack-mono);
 	
@@ -218,23 +261,38 @@ pre {
 	background: var(--color-highlight);
 
 	/* additional horizontal padding to make background color more prominent */
-	padding: .125rem .5rem;
+	padding: .25rem .5rem;
 
+	/* add slightly curved corners */
 	border-radius: .25rem;
+
 }
 
+/* keyboard element */
 kbd {
+
+	/* thin border */
 	border: 1px solid var(--color-lightest);
+
+	/* thicker border to on the bottom, make it look more "keyboardy" */
 	border-width: 1px 1px 2px;
+
 }
+
+/* a code element within a list item */
 li code {
+
 	/* code within list items omits background color for better readability */
 	background: none;
+
 }
 
 /* <pre> */
 pre {
 
+	/* smaller font size for monospaced text */
+	font-size: 1rem;
+	
 	/* TODO COMMENT */
 	max-width: 100%;
 
@@ -242,21 +300,26 @@ pre {
 	overflow: auto;
 }
 
+/* audio element */
 audio {
 
 }
 
+/* blockquote element */
 blockquote {
-	/* TODO COMMENT */
+	
+	/* add padding to blockquote */
 	padding: 1rem;
 
-	margin: 0 1rem 1.5rem 1rem;
+	/* bottom margin on blockquote */
+	margin: 0 1rem 1rem 1rem;
 
-	/* TODO COMMENT */
-	background: var(--color-highlight-light);
+	/* add background color to blockquote */
+	background: var(--color-neutral);
 
-	/* TODO COMMENT */
+	/* add left border to blockquote */
 	border-left: 4px solid var(--color-highlight);
+
 }
 
 blockquote p:last-child {
@@ -429,8 +492,8 @@ button[type=submit]::after {
 	/* content: " →"; */
 }
 
-button:hover {
-	border: 1px solid var(--color-gray);
+button:hover, button:focus {
+	/* border: 1px solid var(--color-gray); */
 }
 
 button:active, input[type=submit]:active, input[type=button]:active {
@@ -513,15 +576,6 @@ ins:before {
 ins > p {
 	display: inline-block;
 }
-
-p {
-	word-wrap: break-word;
-	margin: 0 0 1rem 0;
-}
-
-	p:last-child {
-		margin-bottom: 0;
-	}
 
 /* forms */
 /* <form>, <fieldset> */

@@ -1,3 +1,9 @@
+/*! A Reasonable Website v0.1 | MIT License | https://github.com/matthewhowell/areasonablewebsite */
+
+:root {
+	--gradient-reasonable: linear-gradient(90deg, rgba(245,71,94,.5) 0%, rgba(238,109,58,.5) 16%, rgba(255,243,82,.5) 32%, rgba(22,162,110,.5) 48%, rgba(93,136,239,.5) 64%, rgba(138,104,232,.5) 80%, rgba(225,71,199,.5) 100%);
+}
+
 /* the html body element */
 body {
 
@@ -77,7 +83,7 @@ article {
 }
 
 /* decorative header bar at the very top of the site */
-.fixed-header-background {
+.fixed-header {
 
 	/* fixed position at the top of the window */
 	position: fixed;
@@ -88,16 +94,17 @@ article {
 	/* 0px off the left */
 	left: 0px;
 
-	/* span the full width */
-	width: 100%;
-
-	/* 4px height */
-	height: .25rem;
-
 	/* no background */
 	/* will use an additional class to apply a color or gradient */
 	background: transparent;
 
+	/* remove padding */
+	padding: 0;
+
+	/* remove margin */
+	margin: 0;
+
+	z-index: 1;
 }
 
 .bg-gradient {
@@ -105,6 +112,8 @@ article {
 	/* background gradient from the site palette */
 	background: var(--gradient);
 
+	/* 4px height */
+	height: .25rem;
 }
 
 /* utility classes for adding bottom margins */
@@ -119,10 +128,10 @@ article {
 main > header  {
 
 	/* add top padding */
-	padding-top: 2rem;
+	padding-top: 4rem;
 
 	/* add bottom margin */
-	margin-bottom: 2rem;
+	margin-bottom: 6rem;
 }
 
 /* the site footer, different than article or section footer */
@@ -232,21 +241,32 @@ h1, h2, h3, h4, h5, h6 {
 button, input[type=submit], input[type=button] {
 
 	/* background light color from the palette */
-	background-color: var(--color-light);
+	background-color: var(--color-medium);
+
+	/* */
+	color: var(--color-lighter);
 
 	/* remove default button border */
 	border: none;
 	
 }
 
+
+button:hover, input[type=submit]:hover, input[type=button]:hover {
+
+	/* dark background color from the palette */
+	background-color: var(--color-dark);
+
+}
 /* decorative gradient for the colors section */
-hr.gradient {
+.gradient-color {
 
 	/* increase hr height to 16px */
-	height: 1rem;
+	height: .5rem;
 
 	/* use the reasonable gradient, from reasonable colors */
 	background: var(--gradient-reasonable);
+
 }
 
 /* a flexbox container for headings with icons */
@@ -316,4 +336,54 @@ li > ul, li > ol {
 	/* remove top padding from nested lists */
 	padding-top: 0;
 	
+}
+
+/* the nav element */
+nav {
+
+	/* 16px font size for the nav */
+	font-size: 1rem;
+	
+}
+
+/* links inside the nav element */
+nav a {
+
+	/* ensure nice vertical spacing if the nav links spill onto a second line */
+	/* helps with smaller width screens */
+	margin-bottom: .5rem;
+
+}
+
+/* container for version number badge */
+.version {
+
+	/* fixed position at the top of the window */
+	position: absolute;
+
+	/* 0px off the top */
+	top: 1rem;
+
+	/* add horizontal padding */
+	padding: 0 1rem;
+
+	/* smaller font size */
+	font-size: .875rem;
+
+	/* to match the other layout elments */
+	box-sizing: border-box;
+
+	/* move badge to the right edge of the screen */
+	text-align: right;
+
+	/* badge should be under any fixed elements */
+	z-index: 0;
+}
+
+/* the version number badge */
+.version code {
+
+	/* add neutral background color */
+	background-color: var(--color-neutral);
+
 }
