@@ -141,7 +141,7 @@ main > footer {
 	font-size: 1rem;
 	
 	/* more vertical padding on the site footer */	
-	padding: 1rem 1rem;
+	padding: 1rem 1rem 2rem 1rem;
 
 }
 
@@ -224,6 +224,18 @@ li:before {
 
 	/* use selection background color from palette */
 	background-color: var(--color-selection); 
+}
+
+mark::selection, mark *::selection {
+	background-color: var(--color-medium);
+}
+
+/* selected text */
+/* browser: firefox */
+mark::-moz-selection, mark *::-moz-selection {
+
+	/* use selection background color from palette */
+	background-color: var(--color-medium); 
 }
 
 /* heading elements */
