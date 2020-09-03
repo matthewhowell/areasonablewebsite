@@ -1,5 +1,5 @@
 # A Reasonable Website
-A Reasonable Website is a template that *anyone can use* to make an accessible, fast, and pretty nice-looking website. That’s it!
+A Reasonable Website is a template that *anyone can use* to make an accessible, fast, and kinda nice-looking website. That’s it!
 
 ## Table of contents
 * [Why does this exist?](#why-does-this-exist)
@@ -14,6 +14,8 @@ A Reasonable Website (<abbr title="A Reasonable Website">ARW</abbr>) exists to h
 
 ## Can I use this?
 A Reasonable Website is free software. The full, annotated source code is available, and it is released here under the MIT License.
+
+The current version (0.1) is usable, but in steady development. Check back later for a more stable release.
 
 It is thoroughly documented, pretty easy to use, and ready for your next humble, tiny, little, amazing, world-changing project.
 
