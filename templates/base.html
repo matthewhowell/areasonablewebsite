@@ -5,30 +5,115 @@
 		<title>The Base Template - A Reasonable Website</title>
 		<meta name="description" content="A Reasonable Website is a template that anyone can use to make an accessible, fast, and kinda nice-looking website.">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="./../css/arw.min.css" />
+		<!-- <link rel="stylesheet" href="./../css/arw.min.css" /> -->
+		<link rel="stylesheet" href="./../css/normalize.css" />
+		<link rel="stylesheet" href="./../css/reasonable.css" />
+		<link rel="stylesheet" href="./../css/website.css" />
+		<link rel="stylesheet" href="./../css/palettes/color-blue.css" id="css-color">
+
 	</head>
 	<body>
 		<div class="full-width fixed-header bg-gradient"></div>
-		<div class="full-width fixed-header version"><code title="Version 0.1.0 is the current stable release">version 0.1.0</code></div>
 		
 		<main>
 			<header>
-				<h1><a name="h1"></a>The Base Template</h1>
-				<p>This base template is the cononical starting point for building a website with <em><a href="https://github.com/matthewhowell/areasonablewebsite">A Reasonable Website</a></em>.</p>
+				<h1>The Base Template</h1>
+				<p>This base template is a reasonable starting point for building websites with <em><a href="https://github.com/matthewhowell/areasonablewebsite">A Reasonable Website</a></em>. It provides a very minimal HTML scaffolding with just a few content sectioning elements to get you started.</p>
+				<p>
+					<a href="" class="button download">Download version 0.1.0</a>
+				</p>
 			</header>
 
 			<article>
+				<section>
+					<h2>HTML Document Structure</h2>
+					<ul class="no-bullet">
+						<li><code>main</code></li>
+						<li>&nbsp;&nbsp;&nbsp;&nbsp;<code>header</code></li>
+						<li>&nbsp;&nbsp;&nbsp;&nbsp;<code>article</code></li>
+						<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>section</code></li>
+						<li>&nbsp;&nbsp;&nbsp;&nbsp;<code>footer</code></li>
+					</ul>
+				</section>
+
+				<div class="full-width neutral">
+				<section>
+					<h3>But, is it <em>reasonable</em>?</h3>
+						
+					<h4>1. Accessible</h4>
+					<p>The Base Template meets all of the same <a href="">accessibility standards</a> required of all the <em>Reasonable Website</em> templates.</p>
+					<table>
+						<caption>Accessibility test results for base.html</caption>
+						<thead>
+							<tr>
+								<th scope="col">Result</th>
+								<th scope="col">Test Service</th>
+								<th scope="col">Score</th>
+								<th scope="col">Requirement</th>
+							</tr>
+						</thead>
+						<tr>
+							<td class="result pass">Pass</td>
+							<td>Lighthouse</td>
+							<td class="data">99</td>
+							<td class="data">99</td>
+						</tr>
+
+						<tr>
+							<td class="result pass">Pass</td>
+							<td>WebAIM WAVE</td>
+							<td class="data">0 Alerts</td>
+							<td class="data">0 Alerts</td>
+						</tr>
+					</table>
+
+					<h4>2. Peformant</h4>
+					<p>The Base Template meets all of the same <a href="">performance standards</a> required of all the <em>Reasonable Website</em> templates.</p>
+					<p>This base template is 1.7KB. The single, minified CSS file that styles it is 10.7KB.</p>
+					
+					<table>
+						<caption>Performance test results for base.html</caption>
+						<thead>
+							<tr>
+								<th scope="col">Result</th>
+								<th scope="col">Test Service</th>
+								<th scope="col">Load Time</th>
+								<th scope="col">Perf Score</th>
+							</tr>
+						</thead>
+						<tr>
+							<td class="result pass">Pass</td>
+							<td>PageSpeed Insights</td>
+							<td class="data">1s</td>
+							<td class="data">99</td>
+						</tr>
+
+						<tr>
+							<td class="result pass">Pass</td>
+							<td>Pingdom</td>
+							<td class="data">1s</td>
+							<td class="data">99</td>
+						</tr>
+						<tr>
+							<td class="result pass">Pass</td>
+							<td>Testmysite</td>
+							<td class="data">1s</td>
+							<td class="data">99</td>
+						</tr>
+					</table>
+
+					<h4>3. Kinda Nice-Looking</h4>
+					<p>The Base Template meets all of the same <a href="">design standards</a> required of all the <em>Reasonable Website</em> templates.</p>
+					<p>Subjectively pretty nice-looking!</p>
+
+				</section>
+				</div>
+
 				<section>
 					<h2>Ready for Content</h2>
 					<p>And excited to help push your hypertext out into the world.</p>
 				</section>
 
-				<div class="full-width neutral">
-				<section>
-					<h3>Accessible, Fast, and Kinda Nice-Looking</h3>
-					<p>This base template is 1.7KB. The single, minified CSS file that styles it is 10.7KB.</p>
-				</section>
-				</div>
 			</article>
 
 			<footer>
@@ -36,5 +121,8 @@
 				<p><mark>May we all–<em>forever</em>–be the publishers of our own hypertext.</mark></p>
 			</footer>
 		</main>
+
+		<!-- version footer, appears at the top of the page -->
+		<footer class="full-width fixed-header version"><code title="Version 0.1.0 is the current stable release">version 0.1.0</code></footer>
 	</body>
 </html>

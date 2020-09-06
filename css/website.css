@@ -211,6 +211,16 @@ li:before {
 	margin-left: -1.25rem;
 }
 
+ul.no-bullet {
+	padding-left: 1rem;
+}
+
+ul.no-bullet > li:before {
+	content: '';
+	width: 0;
+	margin-left: 0;
+}
+
 /* selected text */
 ::selection {
 
@@ -262,7 +272,6 @@ button, input[type=submit], input[type=button] {
 	border: none;
 	
 }
-
 
 button:hover, input[type=submit]:hover, input[type=button]:hover {
 
@@ -398,4 +407,85 @@ nav a {
 	/* add neutral background color */
 	background-color: var(--color-neutral);
 
+}
+
+/* for a button-style link */
+/* a single <span> element within in the <a> */
+a.button {
+
+	/* inline block for easier margins */
+	display: inline-block;
+
+	/* sans serif font for buttons */
+	font-family: var(--font-stack-sans);
+
+	/* white button background to ensure contrast */
+	background-color: var(--color-white);
+	
+	/* rounded butten corners */
+	border-radius: 4px;
+
+	/* clear border */
+	border: 2px solid var(--color-medium);
+
+	/* a button-like border */
+	border-width: 1px 3px 3px 1px;
+
+	/* more padding */
+	padding: .5rem 1rem;
+
+	/* smaller font size for buttons */
+	font-size: .875rem;
+
+	/* bold font for buttons */
+	font-weight: bold;
+
+	/* no underline for button text */
+	text-decoration: none;
+}
+
+/* a span hover and focus state */
+a.button:hover, a.button:focus {
+
+	/* background color */
+	background-color: var(--color-lighter);
+
+}
+
+/* a span active state */
+a.button:active {
+
+	/* adjust border for a "click" when the button is active */
+	border-width: 2px 1px 1px 2px;
+
+}
+
+/* a download button */
+a.download::before {
+
+	/* a down arrow before */
+	content: "↓";
+	
+	/* define explicit width */
+	width: 1.25rem;
+
+	/* space between the arrow and the button text */
+	margin-right: 1rem;
+}
+
+/* table cell with mono class */
+td.mono {
+
+	/* fixed width font stack */
+	font-family: var(--font-stack-mono);
+
+}
+
+td.result {
+	font-family: var(--font-stack-mono);
+}
+
+td.pass {
+	color: green;
+	font-size: .875rem;
 }
