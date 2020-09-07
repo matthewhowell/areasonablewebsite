@@ -1,5 +1,5 @@
 {
-  "name": "reasonablewebsite",
+  "name": "reasonable-website",
   "version": "0.0.1",
   "description": "A Reasonable Website is a template that *anyone can use* to make an accessible, fast, and kinda nice-looking website.",
   "files": [
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/matthewhowell/reasonablewebsite.git"
+    "url": "git+https://github.com/matthewhowell/reasonable-website.git"
   },
   "author": "Matthew Howell",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/matthewhowell/reasonablewebsite/issues"
+    "url": "https://github.com/matthewhowell/reasonable-website/issues"
   },
-  "homepage": "https://matthewhowell.github.io/reasonablewebsite/",
+  "homepage": "https://matthewhowell.github.io/reasonable-website/",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
