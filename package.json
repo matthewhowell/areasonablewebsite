@@ -1,24 +1,25 @@
 {
-  "name": "areasonablewebsite",
+  "name": "reasonablewebsite",
   "version": "0.0.1",
-  "description": "A Reasonable Website is a template that *anyone can use* to make an accessible, fast, and kinda nice-looking website. That’s it!",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "description": "A Reasonable Website is a template that *anyone can use* to make an accessible, fast, and kinda nice-looking website.",
+  "files": [
+    "dist/css/styles.min.css",
+    "dist/base.html",
+    "dist/minimum.html"
+   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/matthewhowell/areasonablewebsite.git"
+    "url": "git+https://github.com/matthewhowell/reasonablewebsite.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Matthew Howell",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/matthewhowell/areasonablewebsite/issues"
+    "url": "https://github.com/matthewhowell/reasonablewebsite/issues"
   },
-  "homepage": "https://github.com/matthewhowell/areasonablewebsite#readme",
+  "homepage": "https://matthewhowell.github.io/reasonablewebsite/",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",

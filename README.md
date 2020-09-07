@@ -37,7 +37,7 @@ If you have some small project that needs a website, using <abbr title="A Reason
 ## How might I use this?
 A Reasonable Website might be used for any project that needs an accessible, well-performing, kinda nice-looking website. Or, more succinctly, use it *for anything that you want.*
 
-<!-- For specifics, please visit the [project website](https://matthewhowell.github.io/areasonablewebsite). -->
+<!-- For specifics, please visit the [project website](https://matthewhowell.github.io/reasonablewebsite). -->
 
 ## Who made this?
 A Reasonable Website was created by [Matthew Howell](https://www.matthewhowell.net), a human, trying his best. Like everything in life, it couldn't exist without the help and generosity of others, find a [#acknowledgements-credits-and-thanks](full list of acknowledgements here).
