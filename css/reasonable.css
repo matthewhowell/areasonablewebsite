@@ -1,4 +1,4 @@
-/*! reasonable.css v0.1 | MIT License | https://github.com/matthewhowell/reasonable.css */
+/*! reasonable.css v0.0.1 | MIT License | https://github.com/matthewhowell/reasonable.css */
 
 :root {
 	/* colors */
@@ -143,7 +143,7 @@ a, a:active {
 		text-decoration: none;
 
 		/* link background color defined in palette */
-		background-color: var(--color-light);
+		background-color: var(--color-lighter);
 	}
 
 	/* link focus state for keyboard users */
@@ -185,23 +185,6 @@ nav a {
 		margin-right: 0;
 
 	}
-
-/* for list elements used inside of nav */
-/* nav ul { */
-
-	/* remove list style */
-	/* list-style: none; */
-
-}
-
-	/* nav ul li {
-
-		display: inline-block;
-	}
-
-	nav ul li:before {
-		content: '';
-	} */
 
 /* <p> */
 p, aside {
@@ -260,10 +243,11 @@ pre {
 	/* monospace font stack */
 	font-family: var(--font-stack-mono);
 	
-	font-size: 1rem;
+	/* smaller font size for monospaced text */
+	font-size: .875rem;
 
 	/* background color for code, kbd, and pre */
-	background: var(--color-highlight);
+	background: var(--color-lighter);
 
 	/* additional horizontal padding to make background color more prominent */
 	padding: .125rem .5rem;
@@ -294,9 +278,6 @@ li code {
 
 /* <pre> */
 pre {
-
-	/* smaller font size for monospaced text */
-	font-size: 1rem;
 	
 	/* TODO COMMENT */
 	max-width: 100%;
