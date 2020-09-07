@@ -504,3 +504,11 @@ td.pass {
 	color: green;
 	font-size: .875;
 }
+
+.fast {
+	font-family: var(--font-stack-mono);
+	text-transform: uppercase;
+	font-size: 1rem;
+	display: inline-block;
+	color: var(--color-dark);
+}
