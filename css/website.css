@@ -506,9 +506,25 @@ td.pass {
 }
 
 .fast {
+	color: var(--color-dark);
 	font-family: var(--font-stack-mono);
 	text-transform: uppercase;
 	font-size: 1rem;
-	display: inline-block;
-	color: var(--color-dark);
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.left-sawtooth {
+	background-image: url('../left-sawtooth.svg');
+	background-repeat: repeat-y;
+	background-size: 4px 4px;
+	background-position-x: left;
+}
+
+.left-wave {
+	background-image: url('../left-wave.svg');
+	background-repeat: repeat-y;
+	background-size: 8px 8px;
+	background-position-x: -4px;
 }
