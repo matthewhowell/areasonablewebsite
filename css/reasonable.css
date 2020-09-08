@@ -72,6 +72,18 @@ html {
     font-size: 100%;
 }
 
+	@media (max-width: 480px) {
+		html {
+			font-size: 87.5%;
+		}
+	}
+
+	@media (max-width: 320px) {
+		html {
+			/* 16px body font size */
+			font-size: 75%;
+		}
+	}
 /* <body> */
 body {
 
