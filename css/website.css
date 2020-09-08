@@ -26,7 +26,7 @@ section {
 
 	/* 608px single column */
 	/* aiming to get a reasonable number (60) of characters per line */
-	max-width: 40rem;
+	max-width: 42rem;
 	
 	/* 320px minimum width */
 	/* minimum width for readable text */
@@ -36,8 +36,8 @@ section {
 	/* 32px margins on the bottom, centered horzontally */
 	margin: 0 auto 2rem auto;
 	
-	/* 16px padding on the sides */
-	padding: 0 1rem;
+	/* 32px padding on the sides */
+	padding: 0 2rem;
 
 }
 
@@ -518,13 +518,12 @@ td.pass {
 .left-sawtooth {
 	background-image: url('../left-sawtooth.svg');
 	background-repeat: repeat-y;
-	background-size: 4px 4px;
-	background-position-x: left;
+	background-size: 16px 16px;
 }
 
 .left-wave {
 	background-image: url('../left-wave.svg');
 	background-repeat: repeat-y;
 	background-size: 8px 8px;
-	background-position-x: -4px;
+	background-position-x: left;
 }
