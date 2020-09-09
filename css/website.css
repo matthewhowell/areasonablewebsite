@@ -41,6 +41,17 @@ section {
 
 }
 
+	/* target narrow screens and windows */
+	@media (max-width: 480px) {
+		article,
+		footer,
+		header,
+		section {
+			/* smaller padding on the sides */
+			padding: 0 1.5rem;
+		}
+	}
+
 /* used for a <div> that wraps article, footer, header, or section */
 /* allows a full width background color to be applied */
 .full-width {
@@ -518,12 +529,11 @@ td.pass {
 .left-sawtooth {
 	background-image: url('../left-sawtooth.svg');
 	background-repeat: repeat-y;
-	background-size: 16px 16px;
+	background-size: 1rem 1rem;
 }
 
 .left-wave {
 	background-image: url('../left-wave.svg');
 	background-repeat: repeat-y;
-	background-size: 8px 8px;
-	background-position-x: left;
+	background-size: 1rem 1rem;
 }

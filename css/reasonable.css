@@ -72,18 +72,24 @@ html {
     font-size: 100%;
 }
 
+	/* target narrow screens and windows */
 	@media (max-width: 480px) {
 		html {
+			/* reduce base font size to 14px */
+			/* which reduces 1rem to 14px */
 			font-size: 87.5%;
 		}
 	}
 
+	/* target very narrow screens and windows */
 	@media (max-width: 320px) {
 		html {
-			/* 16px body font size */
+			/* reduce base font size to 12px */
+			/* which reduces 1rem to 12px */
 			font-size: 75%;
 		}
 	}
+
 /* <body> */
 body {
 
