@@ -527,13 +527,13 @@ td.pass {
 }
 
 .left-sawtooth {
-	background-image: url('../left-sawtooth.svg');
+	background-image: url('../images/left-sawtooth.svg');
 	background-repeat: repeat-y;
 	background-size: 1rem 1rem;
 }
 
 .left-wave {
-	background-image: url('../left-wave.svg');
+	background-image: url('../images/left-wave.svg');
 	background-repeat: repeat-y;
 	background-size: 1rem 1rem;
 }
