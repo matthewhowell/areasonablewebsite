@@ -146,22 +146,24 @@ main > header  {
 }
 
 /* the site footer, different than article or section footer */
-main > footer {
+main footer {
 
 	/* smaller font size for the site footer */
 	font-size: 1rem;
 	
 	/* more vertical padding on the site footer */	
-	padding: 1rem 1rem 2rem 1rem;
+	padding: 1rem 2rem 2rem 2rem;
 
 }
 
+
 /* article footers, section footers */
 /* not the site footer */
-article > footer, section > footer {
+article footer, section footer {
 	font-size: 1rem;
-	padding: 1rem;
-	box-sizing: border-box;
+
+	/* 32px padding on the sides */
+	padding: 0 2rem;
 }
 
 .neutral {
@@ -290,6 +292,7 @@ button:hover, input[type=submit]:hover, input[type=button]:hover {
 	background-color: var(--color-dark);
 
 }
+
 /* decorative gradient for the colors section */
 .gradient-color {
 
@@ -298,6 +301,19 @@ button:hover, input[type=submit]:hover, input[type=button]:hover {
 
 	/* use the reasonable gradient, from reasonable colors */
 	background: var(--gradient-reasonable);
+
+}
+
+/* decorative gradient for the colors section */
+.large {
+
+	/* increase hr height to 16px */
+	height: .125rem;
+
+	/* use the reasonable gradient, from reasonable colors */
+	background: var(--gradient);
+
+	margin: 0 0 3rem 0;
 
 }
 
@@ -516,13 +532,12 @@ td.pass {
 	font-size: .875;
 }
 
-.fast {
+.quick {
 	color: var(--color-dark);
 	font-family: var(--font-stack-mono);
 	text-transform: uppercase;
 	font-size: 1rem;
 	letter-spacing: 1px;
-	text-decoration: none;
 	font-weight: bold;
 }
 
