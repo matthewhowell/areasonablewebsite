@@ -1,0 +1,61 @@
+:root {
+	
+	--color-lighter: #EAE5FA;
+	--color-light: #CBBEEF;
+	--color-medium: #8A68E8;
+	--color-dark: #471EC3;
+	--color-darker: #32178C;
+	
+	/* each palette includes a gradient*/
+	--gradient: linear-gradient(90deg, rgba(245,71,94,1) 0%, rgba(225,71,199,1) 50%, rgba(93,136,239,1) 100%); 
+		
+	--color-link: var(--color-medium);
+	--color-link-visited: var(--color-dark);
+	--color-link-hover: var(--color-light);
+
+	--color-decoration: var(--color-light);
+
+	--color-background: var(--color-background-dark);
+	--color-neutral: var(--color-neutral-dark);
+	--color-selection: #342B50; 
+		/* var(--color-light); */
+	--color-text: var(--color-text-dark);
+
+	--color-link-dark: #BAA8F0;
+	--color-link: var(--color-link-dark);
+	
+}
+
+mark {
+	background-color: var(--color-selection);
+	/* color: var(--color-background-dark); */
+}
+
+::selection {
+	background-color: var(--color-selection);
+	/* color: var(--color-background-dark); */
+}
+
+::-moz-selection { 
+	background-color: var(--color-selection);
+	/* color: var(--color-background-dark); */
+}
+
+/* <a> */
+a, a:active {
+	/* dark purple link color */
+	color: var(--color-link-dark);
+}
+	/* darker purple for visited links */
+	a:visited {
+		color: var(--color-link-dark);
+	}
+ 	
+	 a:hover {
+		color: var(--color-light);
+		/* border-bottom: 2px solid var(--color-blue-medium); */
+	}
+ 
+a {
+	text-decoration-color: var(--color-decoration);
+}

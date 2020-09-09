@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>	
+		<meta charset="utf-8">
+		<title>A Reasonable Website</title>
+
+		<meta name="description" content="A Reasonable Website is a template that anyone can use to make an accessible, fast, and kinda nice-looking website.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" href="./css/reasonable.css" />
+		<link rel="stylesheet" href="./css/website.css" />
+		<link rel="stylesheet" href="./css/palettes/color-blue.css" id="css-color">
+	</head>
+	<body>
+		<div class="full-width fixed-header bg-gradient"></div>
+		
+		<main>
+			<header>
+				<h1>A Reasonable Website</h1>
+				<p><em>A Reasonable Website</em> is a template that <em>anyone can use</em> to make an accessible, fast, and kinda nice-looking<sup><a title="Footnote #1" href="#footnote-1">1</a></sup> website. That’s it!</p>
+			</header>
+
+			<article>
+				<section>
+					<h2>Why does this exist?</h2>
+					<p><em>A Reasonable Website</em> exists to help humans make nice websites. It is designed to be a simple, free, and universal vehicle for pushing hypertext out into the world.</p>
+				</section>
+
+				<section>
+					<h3>Can I use this?</h3>
+					<p><em>A Reasonable Website</em> is free software. The <a href="https://github.com/matthewhowell/reasonable-website">full, annotated source code</a> is available, and it is released here under the <a href="https://choosealicense.com/licenses/mit/">MIT License</a>.</p>
+					<p>The current version (0.0.1) is usable, but in steady development and not for the faint of heart or the wary of bugs.</p>
+				</section>
+
+				<section>
+					<h3>How do I use this?</h3>
+					<p>A Reasonable Website is just an HTML document with a single included stylesheet. If that sounds familiar, then you'll feel at home jumping ahead to the getting started guide.</a>
+					<p><a class="jump button" href="#getting-started">Getting Started Guide</a></p>
+					<p>If you're unsure about HTML or CSS, that's OK! Check out Mozilla's handy introductions to <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML">HTML</a> and <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS">CSS</a> for some beginner-focused guidance.</p> 
+				</section>
+
+				<div class="full-width neutral">
+				<section>
+					<h3>OK, but what is <em>reasonable</em>?</h3>
+					<p>Fair play and a reasonable question.</p>
+					<p>Websites can do so much (so much!), but <em>A Reasonable Website</em> has just three goals: a reasonable website should be <em>accessible</em>, <em>performant</em>, and <em>nice-looking</em>.</p>
+					<p>All software must make choices and those choices reflect the values of its creators. <em>A Reasonable Website</em> tries its very best to make reasonable choices and explicity state those values.</p>
+					
+				</section>
+				</div>
+
+				<section>
+					<div class="flex-heading">
+						<h4>1. Be Accessible </h4>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="icon icon-accessibility"  clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 48 48" ><title>Person in a wheelchair leaning forward, in motion</title><path class="icon-fill" d="m19.839 42.792c1.948 0 3.759-.598 5.26-1.619l3.725 3.725c-2.477 1.942-5.595 3.102-8.985 3.102-8.055 0-14.585-6.53-14.585-14.584 0-3.391 1.161-6.509 3.102-8.986l3.725 3.725c-1.021 1.501-1.619 3.312-1.619 5.261 0 5.17 4.206 9.376 9.377 9.376zm22.098-21.028c-.576-.591-1.38-.902-2.201-.857l-9.943.553 5.472-6.232c.779-.888 1.002-2.071.7-3.129-.159-.724-.597-1.384-1.272-1.805-.02-.015-13.08-7.601-13.08-7.601-1.066-.62-2.41-.483-3.33.338l-6.379 5.69c-1.176 1.048-1.279 2.851-.23 4.027 1.048 1.175 2.851 1.278 4.026.229l4.837-4.314 3.998 2.322-7.058 8.038c-2.926.477-5.559 1.826-7.626 3.77l3.685 3.685c1.666-1.515 3.878-2.439 6.302-2.439 5.171 0 9.377 4.206 9.377 9.377 0 2.424-.924 4.636-2.439 6.302l3.685 3.685c2.455-2.61 3.962-6.121 3.962-9.987 0-2.304-.535-4.482-1.486-6.419l3.849-.214-.936 11.485c-.128 1.57 1.041 2.946 2.611 3.074.078.006.157.009.234.009 1.47 0 2.718-1.129 2.84-2.62l1.201-14.745c.068-.822-.224-1.632-.799-2.222zm-5.282-12.217c2.636 0 4.773-2.137 4.773-4.773 0-2.637-2.137-4.774-4.773-4.774-2.637 0-4.774 2.137-4.774 4.774 0 2.636 2.137 4.773 4.774 4.773z" fill-rule="nonzero"/></svg>
+					</div>
+
+					<p><mark>The Web is for everyone</mark>, including people with disabilities. Websites should make themselves accessible to the largest possible audience. Millions of humans<sup><a title="Footnote #2" href="#footnote-2">2</a></sup> live with some form of physical or cognitive disability. Those disabilities can impair and alter people's ability to use the Web.</p>
+					<p>Sometimes a small amount of code and a reasonable amount of effort can make a website easier to use for a large number of people. <em>A Reasonable Website</em> tries to find those instances and do that work.</p>
+					<p><em>A Reasonable Website</em> works well on all kinds of devices and screens. It makes reasonable decisions about HTML element attributes, color constrast, and font sizes that prioritize accessibility.</p>
+
+					<div class="flex-heading">
+						<h4>2. Be Performant</h4>
+						<svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>A clock</title><circle class="icon-color" cx="12" cy="12" r="10"></circle><polyline class="icon-color" points="12 6 12 12 16 14"></polyline></svg>
+					</div>
+					<p><mark>The Web is for everyone</mark>, including people who lack access to fast connections and unmetered data.</p>
+					<p>Small and fast websites are good websites! They save time, energy, and bandwidth with each page load.</p>
+					<p>The <a href="./dist/base.html">Base Template</a> is currently 4.8kB of gzipped assets (3.5kB of which can be cached). It loads quickly, can be cached reliably, it scrolls and responds to clicks and key presses as one would expect.</p>
+					<p>It uses system font stacks, tiny SVGs for graphical elements, and generally prefers the good and fast solutions over the perfect and slower ones.</p>
+
+					<div class="flex-heading">
+						<h4>3. Be Nice-Looking</h4>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><title>An open eye</title><path class="icon-color" d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle class="icon-color" cx="12" cy="12" r="3"></circle></svg>
+					</div>
+					<p><mark>The Web is for everyone</mark> and a well-designed Web benefits everyone. There is no reason that an accessible, performant website shouldn't also work well and be kinda nice to look at.</p>
+				</section>
+
+				<section class="left-sawtooth">
+					<h3 id="getting-started">Getting Started</h3>
+					<p><em>A Reasonable Website</em> is purposefully simple technology: <strong>an HTML document with a single included stylesheet.</strong></p>
+					<p>To get started fiddling or prototyping, copy and paste the below <code>&lt;link&gt;</code> element into the <code>&lt;head&gt;</code> of an HTML document.
+					<pre>&lt;link rel="stylesheet" href="https://unpkg.com/reasonable-website/dist/css/styles.min.css"&gt;</pre>
+					</p>
+
+					<p><span class="quick"><em>or</em></span></p>
+					<p>Copy and paste the entire below <em>Minimum Template</em> into a blank HTML document.</p>
+					<p>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;title&gt;&lt;/title&gt;
+  &lt;meta name="description" content=""&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;link rel="stylesheet" href="https://unpkg.com/reasonable-website/dist/css/styles.min.css"&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+					</p>
+					
+					<p><span class="quick"><em>or</em></span></p>
+					<p><a href="https://github.com/matthewhowell/reasonable-website/archive/master.zip">Download a copy</a> of the entire git repository.</p>
+					<p>The repository will come with documentation, production and development versions of the stylesheets, all of the templates, and even a copy of this website.</p>
+
+					<p><span class="quick"><em>or</em></span></p>
+					<p>Install the npm package by running this npm command in your terminal.</p>
+<pre>
+npm install reasonable-website
+</pre>
+					<p>Read <a href="https://docs.npmjs.com/downloading-and-installing-packages-locally">more about installing npm packages</a>.</p>
+					
+					<p><span class="quick"><em>or</em></span></p>
+					<p>Clone the git repository, by running this git command in your terminal.</p>
+<pre>
+git clone git@github.com:matthewhowell/reasonable-website.git
+</pre>
+					<p>The repository will come with documentation, production and development versions of the stylesheets, all of the templates, and even a copy of this website. Read <a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository">more about cloning a git repository</a>.</p>
+				</section>
+
+				<div class="full-width neutral mb-0">
+				<footer class="footnotes">
+					<h4>Footnotes</h4>
+					<dl>
+						<dt id="footnote-1">1</dt>
+						<dd>Subjectively pretty nice-looking!</dd>
+
+						<dt id="footnote-2">2</dt>
+						<dd>According to the CDC, <a href="https://www.cdc.gov/media/releases/2018/p0816-disability.html">about 1 in 4 Americans live with a disability</a>.</dd>
+					</dl>
+				</footer>
+				</div>
+
+				<hr class="large"/>
+
+				<!-- acknowledgements, credits, and thanks -->
+				<section class="mb-3">
+					<a name="acknowledgements"></a>
+					<h3>Acknowledge&shy;ments, Credits, and Thanks</h3>
+
+					<!-- A11y Project -->
+					<h4>The A11Y Project</h4>
+					<p>Thanks to <a href="https://www.a11yproject.com">The Accessibility Project</a> and their <a href="https://www.a11yproject.com/checklist/">WCAG Compliance Checklist</a>.</p>
+					<p>Anyone can <a href="https://opencollective.com/the-a11y-project/contribute
+						https://www.a11yproject.com/sponsorship/">donate to The A11Y Project</a>.</p>
+					
+
+					<!-- Accessible Icon Project -->
+					<h4>Accessible Icon Project</h4>
+					<p>Thanks to <a href="https://triangle-inc.org/">Triangle</a> and <a href="http://accessibleicon.org/">The Accessible Icon Project</a>. This site uses the icon in the <em>Be Accessible</em> heading.</p>
+					<p>Anyone can <a href="https://triangle.ejoinme.org/MyPages/MovingForwardProject/tabid/415699/Default.aspx">donate to Triangle</a>.</p>
+
+					<!-- a11y.coffee -->
+					<h4>A11y.coffee</h4>
+					<p>Thanks to the generous <a href="https://twitter.com/amber1ey">Amberley Romo</a> and the wonderful <a href="https://a11y.coffee">a11y.coffee</a> for its clear and concise explaination of common accessibility problems, goals, and strategies.</p>
+					
+					<!-- Feather Icons -->
+					<h4>Feather Icons</h4>
+					<p>Thanks to <a href="https://colebemis.com/">Cole Bemus</a> for his very nice-looking <a href="https://github.com/feathericons/feather">Feather icons</a>. This site uses the <a href="https://feathericons.com/?query=clock">clock icon</a> in the <em>Be Performant</em> heading and the <a href="https://feathericons.com/?query=eye">eye icon</a> in the <em>Be Nice-Looking</em>.</p>
+
+					<!-- Laura Kalbag -->
+					<h4>Laura Kalbag</h4>
+					<p>Thanks to <a href="https://laurakalbag.com">Laura Kalbag</a> for her book <a href="https://abookapart.com/products/accessibility-for-everyone">Accessibility For Everyone</a> and for all of her work at the <a href="https://small-tech.org">Small Technology Foundation</a>.</p>
+					<p>Anyone can <a href="https://small-tech.org/fund-us/">donate to the Small Technology Foundation</a>.</p>
+					
+					<!-- MDN -->
+					<h4>MDN Web Docs</h4>
+					<p>Thanks to Mozilla and the wonderful <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a> are an absolutely essential resource for anyone doing work on the web.</p>
+					<p>Anyone can <a href="https://donate.mozilla.org">donate to Mozilla.</a></p>
+
+					<!-- W3C -->
+					<h4>W3C</h4>
+					<p>Thanks to the <a href="https://webaim.org/">W3C</a> and their <a href="https://www.w3.org/WAI">Web Accessibility Initiative</a>, which provides great accessibility resources to all kinds of folks (like <a href="https://www.w3.org/WAI/roles/developers/">developers</a> and <a href="https://www.w3.org/WAI/roles/designers/">designers</a>).</p>
+					<p>Anyone can <a href="https://www.w3.org/support/">donate to the W3C.</a></p>
+					
+					<!-- WebAIM -->
+					<h4>WebAIM</h4>
+					<p>Thanks to <a href="https://webaim.org/">WebAIM</a> and their <a href="https://webaim.org/resources/contrastchecker/">Contrast Checker</a> tool.</p>
+
+				</section>
+			</article>
+
+			<div class="full-width neutral mb-0">
+			<footer>
+				<p>A Reasonable Website is a piece of <em>Reasonable Work</em>, a small collection of utterly reasonable pieces of technology and<em>–sometimes–</em>other things.</p>
+				<p>It was created in 2020 by <a href="https://www.matthewhowell.net">Matthew Howell</a>, with an unbelievable amount of <a href="#acknowledgements">help from others</a>.</p>
+				<p><mark>May we all–<em>forever</em>–be the publishers of our own hypertext.</mark></p>
+			</footer>
+			</div>
+		</main>
+
+		<!-- version footer, appears at the top of the page -->
+		<footer class="full-width fixed-header version"><code title="Version 0.0.1 is the current stable release">version 0.0.1</code></footer>
+		
+		<script>
+
+			// find the color style sheet
+			// swap the href attribute with the new sheet
+			const swapStylesheet = function (sheet, href) {
+				const availableSheets = ['css-color', 'css-mode', 'css-gradient'];
+
+				if (availableSheets.includes(sheet)) {
+					
+					const linkElement = document.getElementsByName(sheet);
+					console.log(linkElement);
+					if (linkElement[0]) {
+
+						linkElement[0].href = './css/' + href;
+					}
+				}
+			}
+
+		// a handler for the element navigation form submit
+		const changeColorPalette = function(event) {
+
+			// use that parent element to gather all its option elements
+			const option_elements = document.querySelectorAll("#color-select option");
+			const element_select = document.querySelector("#color-select");
+			
+			// ensure that we have some selected option
+			if (option_elements[element_select.selectedIndex]) {
+				const selectedStylesheetOption = option_elements[element_select.selectedIndex];
+				// changePalette(selectedStylesheetOption.value);
+				swapStylesheet('css-color', 'palettes/color-' + selectedStylesheetOption.value + '.css');
+			}
+
+			// prevent the form from actually submitting and changing the URL
+			event.preventDefault();
+			return false;
+
+		};
+
+		</script>
+	</body>
+</html>
