@@ -1,0 +1,541 @@
+@import url('./normalize.css');
+@import url('./reasonable.css');
+/*! A Reasonable Website v0.0.1 | MIT License | https://github.com/matthewhowell/reasonable-website */
+
+:root {
+	--gradient-reasonable: linear-gradient(90deg, rgba(245,71,94,.5) 0%, rgba(238,109,58,.5) 16%, rgba(255,243,82,.5) 32%, rgba(22,162,110,.5) 48%, rgba(93,136,239,.5) 64%, rgba(138,104,232,.5) 80%, rgba(225,71,199,.5) 100%);
+}
+
+/* the html body element */
+body {
+
+	/* a bottom border for the site */
+	/* uses the decoration shade in the palette */
+	border-bottom: .25rem solid var(--color-decoration);
+
+}
+
+/* the four primary HTML elements used to denote content sections */
+/* each will handle its own layout */
+/* each can be wrapped in a <div class="full-width"></div> to apply a background color */
+article,
+footer,
+header,
+section {
+
+	/* use border box to make the math more obvious */
+	box-sizing: border-box;
+
+	/* 608px single column */
+	/* aiming to get a reasonable number (60) of characters per line */
+	max-width: 42rem;
+	
+	/* 320px minimum width */
+	/* minimum width for readable text */
+	/* this nicely supports older, narrower mobile devices */
+	min-width: 20rem;
+	
+	/* 32px margins on the bottom, centered horzontally */
+	margin: 0 auto 2rem auto;
+	
+	/* 32px padding on the sides */
+	padding: 0 2rem;
+
+}
+
+	/* target narrow screens and windows */
+	@media (max-width: 480px) {
+		article,
+		footer,
+		header,
+		section {
+			/* smaller padding on the sides */
+			padding: 0 1.5rem;
+		}
+	}
+
+/* used for a <div> that wraps article, footer, header, or section */
+/* allows a full width background color to be applied */
+.full-width {
+
+	/* full with, only use within full width elements */
+	width: 100%;
+
+	/* allow full width */
+	max-width: none;
+
+	/* bottom margin and center horizontally */
+	margin: 0 auto 2rem auto;
+
+	/* vertical padding, anticipating a background color */
+	padding: 2rem 0rem;
+}
+
+/* target the four content sectioning elements */
+/* when wrapped in a .full-width <div> */
+.full-width > article,
+.full-width > footer,
+.full-width > header,
+.full-width > section {
+
+	/* remove the bottom margin */
+	/* this space will be replicated by the vertical padding in the parent .full-width element */
+	margin-bottom: 0;
+
+}
+
+/* article element specifics */
+article {
+
+	/* remove article padding */
+	padding: 0;
+
+	/* remove article max width to allow full color backgrounds */
+	max-width: none;
+
+}
+
+/* decorative header bar at the very top of the site */
+.fixed-header {
+
+	/* fixed position at the top of the window */
+	position: fixed;
+
+	/* 0px off the top */
+	top: 0px;
+
+	/* 0px off the left */
+	left: 0px;
+
+	/* no background */
+	/* will use an additional class to apply a color or gradient */
+	background: transparent;
+
+	/* remove padding */
+	padding: 0;
+
+	/* remove margin */
+	margin: 0;
+
+	z-index: 1;
+}
+
+.bg-gradient {
+
+	/* background gradient from the site palette */
+	background: var(--gradient);
+
+	/* 4px height */
+	height: .25rem;
+}
+
+/* utility classes for adding bottom margins */
+.mb-0 { margin-bottom: 0rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+.mb-3 { margin-bottom: 3rem; }
+.mb-4 { margin-bottom: 4rem; }
+
+
+/* site header */
+main > header  {
+
+	/* add top padding */
+	padding-top: 4rem;
+
+	/* add bottom margin */
+	margin-bottom: 6rem;
+}
+
+/* the site footer, different than article or section footer */
+main > footer {
+
+	/* smaller font size for the site footer */
+	font-size: 1rem;
+	
+	/* more vertical padding on the site footer */	
+	padding: 1rem 1rem 2rem 1rem;
+
+}
+
+/* article footers, section footers */
+/* not the site footer */
+article > footer, section > footer {
+	font-size: 1rem;
+	padding: 1rem;
+	box-sizing: border-box;
+}
+
+.neutral {
+	background-color: var(--color-neutral);
+}
+
+/* footnotes description list term elements */
+.footnotes dl dt {
+
+	/* remove bold font for footnote numbers */
+	font-weight: normal;
+
+}
+
+/* footnotes definition list definition elements */
+.footnotes dl dd {
+
+	/* 16px margin to separate from the <dt> elements */
+	margin-left: 1rem;
+
+}
+
+/* sup element links used as inline footnotes links */
+sup > a {
+
+	/* add vertical and horizontal padding */
+	padding: 1px 4px;
+
+	/* add background color */
+	background-color: var(--color-lighter);
+
+}
+
+/* unordered list element */
+ul {
+
+	/* remove list style */
+	list-style: none;
+
+}
+
+/* :before list item, used to style bullet */
+li:before {
+
+	/* add bullet character */
+	content: '●';
+
+	/* use decoration color */
+	color: var(--color-decoration);
+
+	/* use inline block for easier layout control */
+	display: inline-block;
+
+	/* explicit width of 20px */
+	width: 1.25rem;
+
+	/* negative margin to pull back */
+	margin-left: -1.25rem;
+}
+
+ul.no-bullet {
+	padding-left: 1rem;
+}
+
+ul.no-bullet > li:before {
+	content: '';
+	width: 0;
+	margin-left: 0;
+}
+
+/* selected text */
+::selection {
+
+	/* use selection background color from palette */
+	background-color: var(--color-selection); 
+}
+
+/* selected text */
+/* browser: firefox */
+::-moz-selection {
+
+	/* use selection background color from palette */
+	background-color: var(--color-selection); 
+}
+
+mark::selection, mark *::selection {
+	background-color: var(--color-medium);
+}
+
+/* selected text */
+/* browser: firefox */
+mark::-moz-selection, mark *::-moz-selection {
+
+	/* use selection background color from palette */
+	background-color: var(--color-medium); 
+}
+
+/* heading elements */
+h1, h2, h3, h4, h5, h6 {
+
+	/* underline headings */
+	text-decoration: underline;
+
+	/* decoration color from the palette */
+	text-decoration-color: var(--color-decoration);
+
+}
+
+/* form buttons */
+button, input[type=submit], input[type=button] {
+
+	/* background light color from the palette */
+	background-color: var(--color-medium);
+
+	/* */
+	color: var(--color-lighter);
+
+	/* remove default button border */
+	border: none;
+	
+}
+
+button:hover, input[type=submit]:hover, input[type=button]:hover {
+
+	/* dark background color from the palette */
+	background-color: var(--color-dark);
+
+}
+/* decorative gradient for the colors section */
+.gradient-color {
+
+	/* increase hr height to 16px */
+	height: .5rem;
+
+	/* use the reasonable gradient, from reasonable colors */
+	background: var(--gradient-reasonable);
+
+}
+
+/* a flexbox container for headings with icons */
+.flex-heading {
+
+	/* use flexbox to allow icon and heading on the same line */
+	display: flex;
+
+	/* add a bottom margin to the container */
+	margin-bottom: 1rem;
+
+}
+
+	/* adjustments for h4 headings within the flexbox container */
+	.flex-heading h4 {
+
+		/* remove the margin */
+		margin: 0;
+
+		/* adjust the line height */
+		line-height: 1.5rem;
+
+		/* reorder h4 to appear after the icon */
+		/* the h4 comes first in the markup for accessiblity reasons */
+		order: 1;
+	}
+
+	/* adjustments for icons within the flexbox container */
+	.flex-heading .icon {
+
+		/* height should match the line height of the heading */
+		height: 1.5rem;
+
+		/* put 16px space between the icon and the heading */
+		margin-right: 1rem;
+
+		/* this is an svg element */
+		/* adjust the stroke color to match the palette */
+		stroke: var(--color-medium);
+
+		/* reorder h4 to appear after the icon */
+		/* the h4 comes first in the markup for accessiblity reasons */
+		order: 0;
+	}
+
+	/* used to adjust color for solid fill shapes */
+	.flex-heading .icon-fill {
+
+		/* safari fix to ensure the stroke/fill color if properly applied */
+		fill: var(--color-medium);
+
+	}
+
+	/* used to override svg color */
+	.flex-heading .icon-color {
+
+		/* adjust the stroke color to match the palette */
+		color: var(--color-medium);
+
+	}
+
+
+/* ? */
+/* nested lists */
+li > ul, li > ol {
+
+	/* remove top padding from nested lists */
+	padding-top: 0;
+	
+}
+
+/* the nav element */
+nav {
+
+	/* 16px font size for the nav */
+	font-size: 1rem;
+	
+}
+
+/* links inside the nav element */
+nav a {
+
+	/* ensure nice vertical spacing if the nav links spill onto a second line */
+	/* helps with smaller width screens */
+	margin-bottom: .5rem;
+
+}
+
+/* container for version number badge */
+.version {
+
+	/* fixed position at the top of the window */
+	position: absolute;
+
+	/* 0px off the top */
+	top: 1rem;
+
+	/* add horizontal padding */
+	padding: 0 1rem;
+
+	/* smaller font size */
+	font-size: .875rem;
+
+	/* to match the other layout elments */
+	box-sizing: border-box;
+
+	/* move badge to the right edge of the screen */
+	text-align: right;
+
+	/* badge should be under any fixed elements */
+	z-index: 0;
+}
+
+/* the version number badge */
+.version code {
+
+	/* add neutral background color */
+	background-color: var(--color-neutral);
+
+}
+
+/* for a button-style link */
+/* a single <span> element within in the <a> */
+a.button {
+
+	/* inline block for easier margins */
+	display: inline-block;
+
+	/* sans serif font for buttons */
+	font-family: var(--font-stack-sans);
+
+	/* white button background to ensure contrast */
+	background-color: var(--color-white);
+	
+	/* rounded butten corners */
+	border-radius: 4px;
+
+	/* clear border */
+	border: 2px solid var(--color-medium);
+
+	/* a button-like border */
+	border-width: 1px 3px 3px 1px;
+
+	/* more padding */
+	padding: .5rem 1rem;
+
+	/* smaller font size for buttons */
+	font-size: .875rem;
+
+	/* bold font for buttons */
+	font-weight: bold;
+
+	/* no underline for button text */
+	text-decoration: none;
+}
+
+/* a span hover and focus state */
+a.button:hover, a.button:focus {
+
+	/* background color */
+	background-color: var(--color-lighter);
+
+}
+
+/* a span active state */
+a.button:active {
+
+	/* adjust border for a "click" when the button is active */
+	border-width: 2px 1px 1px 2px;
+
+}
+
+/* a download button */
+a.download::before {
+
+	/* a down arrow before */
+	content: "↓";
+	
+	/* define explicit width */
+	width: 1.25rem;
+
+	/* space between the arrow and the button text */
+	margin-right: 1rem;
+
+}
+
+/* a download button */
+a.jump::before {
+
+	/* a down arrow before */
+	content: "#";
+	
+	/* define explicit width */
+	width: 1.25rem;
+
+	/* space between the arrow and the button text */
+	margin-right: 1rem;
+
+}
+
+/* table cell with mono class */
+td.mono {
+
+	/* fixed width font stack */
+	font-family: var(--font-stack-mono);
+
+}
+
+td.result {
+	font-family: var(--font-stack-mono);
+}
+
+td.pass {
+	color: green;
+	font-size: .875;
+}
+
+.fast {
+	color: var(--color-dark);
+	font-family: var(--font-stack-mono);
+	text-transform: uppercase;
+	font-size: 1rem;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.left-sawtooth {
+	background-image: url('../left-sawtooth.svg');
+	background-repeat: repeat-y;
+	background-size: 1rem 1rem;
+}
+
+.left-wave {
+	background-image: url('../left-wave.svg');
+	background-repeat: repeat-y;
+	background-size: 1rem 1rem;
+}
